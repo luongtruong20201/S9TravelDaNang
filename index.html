@@ -4,21 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css/">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div className='HeaderTop d-flex bg-warning position-unset'>
-            <ul className='d-flex text-white ps-0'>
-                <li><AiFillHome className='icon'/>CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ DU LỊCH S9 ĐÀ NẴNG</li>
-                <li><a href="mailto:s9traveldn@gmail.com" className='text-white'><HiOutlineMail/>s9traveldn@gmail.com</a></li>
-                <li><a href="tel: 0935 327 969 " className='text-white'><BsTelephoneFill/>0935 327 969</a></li>
-                <li><a href="tel: 0979 324 821" className='text-white'><BsTelephoneFill/>0979 324 821</a></li>
+    <!-- Bắt đầu header -->
+    <header class="container-fluid ps-0">
+        <div>
+            <ul class ='Header__Top d-flex bg-warning text-white align-items-center ps-0'>
+                <li class="ms-2 me-2"><i class="bi bi-house-door-fill"></i>CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ DU LỊCH S9 ĐÀ NẴNG</li>
+                <li class="ms-2 me-2"><a href="mailto:s9traveldn@gmail.com" class="text-white"><i class="bi bi-envelope"></i>s9traveldn@gmail.com</a></li>
+                <li class="ms-2 me-2"><a href="tel: 0935 327 969 " class="text-white"><i class="bi bi-telephone-fill"></i>0935 327 969</a></li>
+                <li class="ms-2 me-2"><a href="tel: 0979 324 821" class="text-white"><i class="bi bi-telephone-fill"></i>0979 324 821</a></li>
             </ul>
-          </div>
+        </div>
     </header>
+    <main>
+        <div class="slider pos">
+            <div class="Header__Main d-flex justify-content-between HeaderMain align-items-center fixed-top">
+                <div class="h-100 ms-2 align-items-center d-flex">
+                    <img src="https://s9traveldanang.com/wp-content/uploads/2022/04/Logo_S9-Travel-Da-Nang-1.png" class =" img__Logo"alt="" />
+                </div>
+                <div>
+                    <ul class='d-flex justify-content-between align-items-center me-2'>
+                        <li><a class = "text-white p-10" href="/#">Trang chủ</a></li>
+                        <li><a class = "text-white" href="/#">Giới thiệu</a></li>
+                        <li><a class = "text-white" href="/#">Tour quốc tế</a></li>
+                        <li><a class = "text-white" href="/#">Tour trong nước</a></li>
+                        <li><a class = "text-white" href="/#">Cảm nang du lịch</a></li>
+                        <li><a class = "text-white" href="/#">Liên hệ</a></li>
+                        <li><i class="bi bi-search"></i></li>
+                    </ul>
+                </div>
+                    
+            </div>
+            <div class="box"></div>
+        </div>
+    </main>
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
