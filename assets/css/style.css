@@ -30,6 +30,7 @@ li{
   background-color: rgba(225,235,241,0.5);
   height: 75px;
   align-items: center;
+  z-index: 100;
 }
 .box{
   height: 10000px;
@@ -39,4 +40,17 @@ li{
 .img__Logo{
     height: 50px;
     width: auto;
+}
+.img__Slider{
+  height: 450px;
+  
+}
+
+.carousel-item{
+  height: 25rem;
+  color:white;
+  background: #777;
+  position: relative;
+  background-position: center;
+  background-size:cover;
 }
