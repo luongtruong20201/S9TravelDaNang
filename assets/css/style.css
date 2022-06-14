@@ -3,3 +3,40 @@
     margin: 0;
     padding: 0;
 }
+/* css cho the html */
+a{
+    text-decoration: none;
+
+}
+ul{
+  list-style-type: none;
+  margin:0px;
+}
+i{
+    margin-right: 6px;
+
+}
+li{
+    margin-right: 8px;
+    margin-left: 8px;
+}
+/* css cho cac the html */
+.Header_Top{
+
+  align-items: center;
+}
+
+.Header__Main{
+  background-color: rgba(225,235,241,0.5);
+  height: 75px;
+  align-items: center;
+}
+.box{
+  height: 10000px;
+  width: 100%;
+  background-color: black;
+}
+.img__Logo{
+    height: 50px;
+    width: auto;
+}
