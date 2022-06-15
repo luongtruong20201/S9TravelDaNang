@@ -20,10 +20,6 @@ ul{
   list-style-type: none;
   margin:0px;
 }
-i{
-    margin-right: 6px;
-
-}
 
 hr {
   border: 0;
@@ -32,6 +28,11 @@ hr {
   height: 1px;
 }
 /* css cho cac the html Header*/
+.Header__Top i{
+  margin-right: 6px;
+
+}
+
 .Header_Top{
   
   align-items: center;
@@ -75,4 +76,12 @@ hr {
   border-color: #C4C4C4;
   border-radius: 5px 5px 5px 5px;
 
+}
+/* css cho footer */
+footer a span{
+  color: #000;
+}
+footer i{
+  color: #FAC624;
+  padding-right: 2px;
 }
