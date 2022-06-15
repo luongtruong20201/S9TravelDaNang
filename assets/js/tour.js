@@ -43,44 +43,127 @@ tours = [
 // const txt = JSON.stringify(tours, undefined, 4)
 // localStorage.setItem("tours", txt)
 
-for (let i = 0; i < tours.length; i++) {
-    let heading = document.getElementById('heading')
-    let div1 = document.createElement('div')
-    div1.className = 'mb-5 d-flex'
-    let div2 = document.createElement('div')
-    div2.className = 'bg-warning border-danger border-top border-5 w-100 d-flex justify-content-center p-2'
-    let h2 = document.createElement('h2')
-    h2.className = 'text-white fs-5 fw-bold mb-0'
-    h2.innerText = tours[i].heading
-    div2.appendChild(h2)
-    div1.appendChild(div2)
-    heading.append(div1)
-    for (let j = 0; j < tours[i]['tours'].length; j++) {
-        let div1 = document.createElement('div')
-        div1.className = 'col'
-        let div2 = document.createElement('div')
-        div2.className = 'card'
-        div2.style.width = '18rem'
-        let img = document.createElement('img')
-        img.className = 'card-img-top'
-        img.src = tours[i]['tours'][j]['img']
-        let div3 = document.createElement('div')
-        div3.className = 'd-flex justify-content-space-around collapse'
-        div3.innerHTML = `<hr class='col'/>
-        <span class='btn d-inline border titleContent '>${tours[i]['tours'][j]['name']}</span>
-        <hr class='col '/>`
-        let div4 = document.createElement('div')
-        div1.className = 'card-body'
-        let ul = document.createElement('ul')
-        ul.innerHTML = `<li>${tours[i]['tours'][j]['price']}</li>
-                        <li>${tours[i]['tours'][j]['time']}</li>
-                        <li>${tours[i]['tours'][j]['vehicle']}</li>`
-        div4.appendChild(ul)
-        div2.appendChild(img)
-        div2.appendChild(div3)
-        div2.appendChild(div4)
-        div1.appendChild(div2)
-        heading.appendChild(div1)
+// for (let i = 0; i < tours.length; i++) {
+//     let heading = document.getElementById('heading')
+//     let div1 = document.createElement('div')
+//     div1.className = 'mb-5 d-flex'
+//     let div2 = document.createElement('div')
+//     div2.className = 'bg-warning border-danger border-top border-5 w-100 d-flex justify-content-center p-2'
+//     let h2 = document.createElement('h2')
+//     h2.className = 'text-white fs-5 fw-bold mb-0'
+//     h2.innerText = tours[i].heading
+//     div2.appendChild(h2)
+//     div1.appendChild(div2)
+//     heading.append(div1)
+//     for (let j = 0; j < tours[i]['tours'].length; j++) {
+//         let div1 = document.createElement('div')
+//         div1.className = 'col'
+//         let div2 = document.createElement('div')
+//         div2.className = 'card'
+//         div2.style.width = '18rem'
+//         let img = document.createElement('img')
+//         img.className = 'card-img-top'
+//         img.src = tours[i]['tours'][j]['img']
+//         let div3 = document.createElement('div')
+//         div3.className = 'd-flex justify-content-space-around collapse'
+//         div3.innerHTML = `<hr class='col'/>
+//         <span class='btn d-inline border titleContent '>${tours[i]['tours'][j]['name']}</span>
+//         <hr class='col '/>`
+//         let div4 = document.createElement('div')
+//         div1.className = 'card-body'
+//         let ul = document.createElement('ul')
+//         ul.innerHTML = `<li>${tours[i]['tours'][j]['price']}</li>
+//                         <li>${tours[i]['tours'][j]['time']}</li>
+//                         <li>${tours[i]['tours'][j]['vehicle']}</li>`
+//         div4.appendChild(ul)
+//         div2.appendChild(img)
+//         div2.appendChild(div3)
+//         div2.appendChild(div4)
+//         div1.appendChild(div2)
+//         heading.appendChild(div1)
+//     }
+// }
+
+{/* <div class="mb-4  d-flex">
+                <div class="bg-warning border-danger border-top border-5 w-100 d-flex justify-content-center p-2">
+                    <h2 class="text-white fs-5 fw-bold mb-0">TOUR DU LỊCH ĐÀ NẴNG</h2>
+                </div>
+            </div> */}
+
+let heading = document.getElementById('heading')
+
+for(let i = 0; i<tours.length; i++){
+    let div = document.createElement('div')
+    div.className = 'mb-4 d-flex'
+    div.innerHTML = `<div class="bg-warning border-danger border-top border-5 w-100 d-flex justify-content-center p-2">
+    <h2 class="text-white fs-5 fw-bold mb-0">${tours[i].heading}</h2>
+</div>`
+    heading.appendChild(div)
+    let number = 1;
+    for(let j = 0; j<tours[i]['tours'].length; j++){
+        let card = document.createElement('card')
+        card.className = 'card'
+        card.style.width = '18rem'
+        card.style.backgroundColor = '#f3f3f3'
+        card.innerHTML = `<!-- Title of card -->
+        <div class="title ">
+            <a  class = "d-flex justify-content-center" href="/#">
+                <h2 class=" fs-5 align-item-center mb-0 p-2" style="color: #d36e24;">${tours[i]['tours'][j]['title']}</h2>
+            </a>
+        </div>
+        <!-- img of card -->
+        <a  href="/#">
+            <img src="${tours[i]['tours'][j]['img']}" class="card-img-top" alt="...">
+        </a href="/#">
+        <!-- places -->
+        <div class="d-flex justify-content-between collapse Card__Text">
+            <hr class="flex-fill" style="width:9%" >
+            <span  class= " text-nowrap p-1 border border-secondary "style="text-overflow: clip;  overflow: hidden; font-size: 14px;">${tours[i]['tours'][j]['name']}</span>
+            <hr class="flex-fill" style="width:9%">
+        </div>
+        <!-- information -->
+        <div class="card-body px-2 py-2 container">
+            <ul class="elementor-icon-list-items m-0 p-0">
+                <li class="elementor-icon-list-item pb-1">
+                    <span>
+                        <i class="bi bi-currency-dollar text-danger"></i>
+                    </span>
+                    <span class="elementor-icon-list-text"><strong>Liên hệ để biết thêm</strong></span>
+                </li>
+                
+                <li class="elementor-icon-list-item pb-1 mt-1 " >
+                    <span>
+                        <i class="bi bi-clock text-danger"></i>
+                    </span>
+                    <span class="elementor-icon-list-text">Thời gian: 5 Ngày 4 Đêm</span>
+                </li>
+                
+                <li class="elementor-icon-list-item mt-1">
+                    <span>
+                        <i class="fa-solid fa-car text-danger"></i>
+                    </span>
+                    <span class="elementor-icon-list-text">Phương tiện: Ô tô</span>
+                </li>
+            </ul>
+        </div>
+        <!-- contact -->
+        <div class="d-flex bg-warning">
+            <div class="flex-fill ">
+                <a href="" class="container ps-1 text-white">
+                    <i class="bi bi-telephone-fill me-2 pe-2"></i>
+                    <span>Đặt Tour</span>
+                </a>
+            </div>
+            <div class="flex-fill">
+                <a href="" class="container ps-1 text-white">
+                    <i class="bi bi-search-heart me-2 pe-2"></i>
+                    <span>Đặt Tour</span>
+                </a>
+            </div>
+        </div>`
     }
 }
 
+{/* <div class="card" style="width: 18rem; background-color: #F3F3F3;">
+                    
+                </div> */}
