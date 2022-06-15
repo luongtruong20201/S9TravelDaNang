@@ -46,7 +46,7 @@ tours = [
 let tour = document.getElementById('tours')
 for (let i = 0; i < tours.length; i++) {
     let heading = document.createElement('div')
-    heading.className = 'mb-4  d-flex row'
+    heading.className = 'my-4 d-flex row'
     heading.innerHTML = `<div class="bg-warning border-danger border-top border-5 w-100 d-flex justify-content-center p-2">
     <h2 class="text-white fs-5 fw-bold mb-0">${tours[i]['heading']}</h2>
 </div>`
@@ -56,7 +56,8 @@ for (let i = 0; i < tours.length; i++) {
     for (let j = 0; j < tours[i]['tours'].length; j++) {
         let col_3 = document.createElement('div')
         col_3.className = 'col-3'
-        col_3.innerHTML = `<div class="d-flex justify-content-between" >
+        col_3.innerHTML = 
+        `<div class="d-flex justify-content-between" >
         <!-- card -->
         <div class="card " style="width: 18rem; background-color: #F3F3F3;">
             <!-- Title of card -->
