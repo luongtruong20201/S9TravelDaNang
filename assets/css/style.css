@@ -85,3 +85,16 @@ footer i{
   color: #FAC624;
   padding-right: 2px;
 }
+/* fixed contact */
+.Contact__fixed{
+  position: fixed;
+  left: auto;
+  right: 0;
+  bottom: 50px;
+  z-index: 999;
+  border-right: 0;
+  width: 70px;
+  background-color: #fff;
+  padding: 10px 15px 10px 5px;
+  box-sizing: border-box;
+}
