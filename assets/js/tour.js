@@ -57,7 +57,7 @@ for (let i = 0; i < tours.length; i++) {
     row.className = 'row'
     for (let j = 0; j < tours[i]['tours'].length; j++) {
         let col_3 = document.createElement('div')
-        col_3.className = 'col-3'
+        col_3.className = 'col'
         col_3.innerHTML = 
         `<div class="d-flex justify-content-between" >
         <!-- card -->
@@ -65,7 +65,7 @@ for (let i = 0; i < tours.length; i++) {
             <!-- Title of card -->
             <div class="title ">
                 <a  class = "d-flex justify-content-center" href="/#">
-                    <h2 class=" fs-5 align-item-center mb-0 p-2" style="color: #d36e24; text-overflow: ellipsis;overflow: hidden; white-space: nowrap;">${tours[i]['tours'][j]['title']}</h2>
+                    <h2 class=" fs-6 align-item-center mb-0 p-2" style="color: #d36e24; text-overflow: ellipsis;overflow: hidden; white-space: nowrap;">${tours[i]['tours'][j]['title']}</h2>
                 </a>
             </div>
             <!-- img of card -->
@@ -73,7 +73,7 @@ for (let i = 0; i < tours.length; i++) {
                 <img src="${tours[i]['tours'][j]['img']}" class="card-img-top" alt="...">
             </a href="/#">
             <!-- places -->
-            <div class="d-flex justify-content-between collapse Card__Text">
+            <div class="d-flex justify-content-between collapse py-2 Card__Text">
                 <hr class="flex-fill" style="width:9%" >
                 <span  class= " text-nowrap p-1 border border-secondary "style="text-overflow: clip;  overflow: hidden; font-size: 14px;">${tours[i]['tours'][j]['name']}</span>
                 <hr class="flex-fill" style="width:9%">
