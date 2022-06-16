@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
+
     <!-- icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -36,17 +39,47 @@
                 <div class="h-100 ms-2 align-items-center d-flex">
                     <img src="https://s9traveldanang.com/wp-content/uploads/2022/04/Logo_S9-Travel-Da-Nang-1.png" class =" img__Logo"alt="" />
                 </div>
-                <div>
-                    <ul class='d-flex justify-content-between align-items-center me-2'>
-                        <li><a class = "text-white p-10" href="/#">Trang chủ</a></li>
-                        <li><a class = "text-white" href="/#">Giới thiệu</a></li>
-                        <li><a class = "text-white" href="/#">Tour quốc tế</a></li>
-                        <li><a class = "text-white" href="/#">Tour trong nước <i class="bi bi-chevron-down"></i></a></li>
-                        <li><a class = "text-white" href="/#">Cảm nang du lịch</a></li>
-                        <li><a class = "text-white" href="/#">Liên hệ</a></li>
-                        <li><i class="bi bi-search"></i></li>
-                    </ul>
+                <div class="h-100">
+                    <nav class="possition-relative d-flex align-items-center h-100">
+                        <ul class='d-flex justify-content-between align-items-center me-2 menu h-100 '>
+                            <li><a class = "text-white p-10" href="/#">Trang chủ</a></li>
+                            <li><a class = "text-white" href="/#">Giới thiệu</a></li>
+                            <li><a class = "text-white" href="/#">Tour quốc tế</a></li>
+                            <li>
+                                <a class = "text-white px-2" href="/#">Tour trong nước <i class="bi bi-chevron-down"></i> </a>
+                                
+                                <ul class="submenu1 position-absolute p-0 top-100 ">
+                                    <li><a href="">Tour miền bắc <i class="bi bi-chevron-right position-absolute end-0"></i></a>
+                                        
+                                        <ul class="submenu2 position-absolute">
+                                            <li><a href="">Hà Nội</a></li>
+                                            <li><a href="">Hải Phòng</a></li>
+                                            <li><a href="">Ninh Bình</a></li>
+                                            <li><a href="">Hà Giang</a></li>
+                                            <li><a href="">Hạ Long</a></li>
+                                            <li><a href="">Sapa</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">Tour miền nam</a></li>
+                                    <li><a href="">Tour miền trung<i class="bi bi-chevron-right position-absolute end-0"></i></a>
+                                        <ul class="submenu3 position-absolute">
+                                            <li><a href="">Đà Nẵng</a></li>
+                                            <li><a href="">Daily Tour</a></li>
+                                            <li><a href="">Đà Lạt</a></li>
+                                            <li><a href="">Nha Trang</a></li>
+                                            <li><a href="">Quy Nhơn</a></li>
+                                            <li><a href="">Bắc Trung Bộ</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class = "text-white" href="/#">Cảm nang du lịch</a></li>
+                            <li><a class = "text-white" href="/#">Liên hệ</a></li>  
+                            <li><a class = "text-white" href=""><i class="bi button bi-search"></i></a></li>
+                        </ul>
+                    </nav>
                 </div>
+                
                     
             </div>
             <!-- Slider -->
@@ -100,7 +133,10 @@
         </div>
         <!-- Content -->
         <div class="" id="content">
-        
+            <!-- Cẩm nang du lịch -->
+            <div>
+                
+            </div>
         </div>
     </main>
     <!-- Footer -->
@@ -276,7 +312,7 @@
     
     </footer>
  
-    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/tour.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/tour.js"></script>
 </body>
