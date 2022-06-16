@@ -61,11 +61,11 @@ for (let i = 0; i < tours.length; i++) {
         col_3.innerHTML = 
         `<div class="d-flex justify-content-between" >
         <!-- card -->
-        <div class="card " style="width: 18rem; background-color: #F3F3F3;">
+        <div class="card my-3" style="width: 18rem; background-color: #F3F3F3;">
             <!-- Title of card -->
             <div class="title ">
                 <a  class = "d-flex justify-content-center" href="/#">
-                    <h2 class=" fs-5 align-item-center mb-0 p-2" style="color: #d36e24;">${tours[i]['tours'][j]['title']}</h2>
+                    <h2 class=" fs-5 align-item-center mb-0 p-2" style="color: #d36e24; text-overflow: ellipsis;overflow: hidden; white-space: nowrap;">${tours[i]['tours'][j]['title']}</h2>
                 </a>
             </div>
             <!-- img of card -->
