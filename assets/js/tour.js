@@ -5,12 +5,12 @@ tours = [
             { title: "Hành trình Di sản Miền Trung", name: "Đà Nẵng - Hội An - Quảng Trị - Quảng Bình - Huế'", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/1.jpg" },
             { title: "Đà Nẵng - Hội An - Cố đô Huế", name: "Đà Nẵng - Hội An - huế", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/2.jpg" },
             { title: "Đà Nẵng - Đảo Lý Sơn", name: "Đà Nẵng - Đảo Lý Sơn", price: "Liên hệ để biết thêm", time: "2 Ngày 1 Đêm", vehicle: "Cano, Ô tô", img: "assets/Img/Tours/Tour_DaNang/3.jpg" },
-            { title: "Đà Nẵng - Đảo Lý Sơn", name: "Đà Nẵng - Đảo Lý Sơn", price: "Liên hệ để biết thêm", time: "2 Ngày 1 Đêm", vehicle: "Cano, Ô tô", img: "assets/Img/Tours/Tour_DaNang/4.jpg" },
+            // { title: "Đà Nẵng - Đảo Lý Sơn", name: "Đà Nẵng - Đảo Lý Sơn", price: "Liên hệ để biết thêm", time: "2 Ngày 1 Đêm", vehicle: "Cano, Ô tô", img: "assets/Img/Tours/Tour_DaNang/4.jpg" },
             { title: "Đà Nẵng - Mỹ Sơn - Hội An", name: "Đà Nẵng - Mỹ Sơn - Hội An", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/5.jpg" },
             { title: "Đà Nẵng - Hội An - Vinpearl Land Hội An", name: "Đà Nẵng - Hội An - Bà Nà Hills - Vinpearl Land Nam Hội An", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/6.jpg" },
             { title: "Đà Nẵng - Hội An - Núi Thần Tài", name: "Đà Nẵng - Hội An - Bà Nà Hills - Núi Thần Tài", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/7.jpg" },
             { title: "Đà Nẵng - Hội An - Cù Lao Chàm", name: "Đà Nẵng - Hội An - Bà Nà Hills - Cù Lao Chàm", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/8.jpg" },
-            // { title: "Đà Nẵng - Hội An - Bà Nà Hills", name: "Đà Nẵng - Hội An - Bà Nà Hills", price: "Liên hệ để biết thêm", time: "3 Ngày 2 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/1.jpg" },            
+            { title: "Đà Nẵng - Hội An - Bà Nà Hills", name: "Đà Nẵng - Hội An - Bà Nà Hills", price: "Liên hệ để biết thêm", time: "3 Ngày 2 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/1.jpg" },            
         ]
     },
     {
@@ -43,14 +43,16 @@ tours = [
 // const txt = JSON.stringify(tours, undefined, 4)
 // localStorage.setItem("tours", txt)
 
-let tour = document.getElementById('tours')
+let tour = document.getElementById('content')
 for (let i = 0; i < tours.length; i++) {
+    let container = document.createElement('div')
+    container.className = 'container'
     let heading = document.createElement('div')
     heading.className = 'my-4 d-flex row'
     heading.innerHTML = `<div class="bg-warning border-danger border-top border-5 w-100 d-flex justify-content-center p-2">
     <h2 class="text-white fs-5 fw-bold mb-0">${tours[i]['heading']}</h2>
 </div>`
-    tour.appendChild(heading)
+    container.appendChild(heading)
     let row = document.createElement('div')
     row.className = 'row'
     for (let j = 0; j < tours[i]['tours'].length; j++) {
@@ -120,5 +122,6 @@ for (let i = 0; i < tours.length; i++) {
     </div>`
         row.appendChild(col_3)
     }
-    tour.appendChild(row)
+    container.appendChild(row)
+    tour.appendChild(container)
 }
