@@ -1,0 +1,146 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+}
+input, input:focus{
+  outline:0px !important;
+  -webkit-appearance:none;
+}
+/* css cho the html */
+input, form, input:focus{
+  outline:0px !important;
+  -webkit-appearance:none;
+}
+a{
+    text-decoration: none;
+
+}
+ul{
+  list-style-type: none;
+  margin:0px;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  height: 1px;
+}
+/* css cho cac the html Header*/
+.Header__Top i{
+  margin-right: 6px;
+
+}
+
+.Header_Top{
+  
+  align-items: center;
+}
+.Header__Main ul li{
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.Header__Main{
+  background-color: rgba(225,235,241,0.5);
+  height: 75px;
+  align-items: center;
+  z-index: 100;
+}
+
+.img__Logo{
+    height: 50px;
+    width: auto;
+}
+.img__Slider{
+  height: 450px;
+  
+}
+
+.carousel-item{
+  height: 25rem;
+  color:white;
+  background: #777;
+  position: relative;
+  background-position: center;
+  background-size:cover;
+}
+/* css cho body */
+.search__tour{
+  margin: -25px 0px 0px 0px;
+
+}
+.search__tour form{
+  border-style: solid;
+  border-color: #C4C4C4;
+  border-radius: 5px 5px 5px 5px;
+
+}
+
+/* css cho content */
+
+.about{
+    margin-left: 7%;
+    width: 86%;
+    justify-content: center;
+}
+.contact-main{
+    margin-left: 7%;
+    width: 86%;
+    justify-content: center;
+}
+
+.contact-ctrl{
+    display: flex;
+}
+
+.contact-information{
+    width: 50%;
+}
+
+.contact-form{
+    width: 50%;
+}
+
+.bi{
+    color: #ffcc00;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn-primary{
+    width: 100%;
+    background-color: #61CE70;
+    border-color: #61CE70;
+}
+
+.btn-primary:hover{
+    background-color: #61CE70;
+    border-color: #61CE70;
+}
+
+
+/* css cho footer */
+footer a span{
+  color: #000;
+}
+footer i{
+  color: #FAC624;
+  padding-right: 2px;
+}
+/* fixed contact */
+.Contact__fixed{
+  position: fixed;
+  left: auto;
+  right: 0;
+  bottom: 50px;
+  z-index: 999;
+  border-right: 0;
+  width: 70px;
+  background-color: #fff;
+  padding: 10px 15px 10px 5px;
+  box-sizing: border-box;
+}
