@@ -142,6 +142,9 @@ background-size:cover;
   border-radius: 5px 5px 5px 5px;
 
 }
+.contact-information-list li i{
+  color:#FFCC00;
+}
 
 /* css cho content */
 
@@ -206,4 +209,29 @@ footer i{
   background-color: #fff;
   padding: 10px 15px 10px 5px;
   box-sizing: border-box;
+}
+/* fixed contact */
+.Contact__fixed{
+  position: fixed;
+  left: auto;
+  right: 0;
+  bottom: 50px;
+  z-index: 999;
+  border-right: 0;
+  width: 70px;
+  background-color: #fff;
+  padding: 10px 15px 10px 5px;
+  box-sizing: border-box;
+}
+.Contact__fixed img{
+  width: 4rem;
+  margin: auto;
+  margin-bottom: -10px;
+  border-radius: 100%;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid #cdcdcd;
+}
+.Contact__fixed span{
+  font-size: smaller;
 }
