@@ -38,10 +38,13 @@ tours = [
         ]
     }
 ]
-// console.log(localStorage.setItem("tour", JSON.stringify(tour)));
+// console.log(localStorage.setItem("tours", JSON.stringify(tour)));
 
 // const txt = JSON.stringify(tours, undefined, 4)
 // localStorage.setItem("tours", txt)
+
+// const txt = JSON.stringify(tours, undefined, 4)
+// localStorage.setItem('tours', txt)
 
 let tour = document.getElementById('content')
 for (let i = 0; i < tours.length; i++) {
@@ -124,4 +127,10 @@ for (let i = 0; i < tours.length; i++) {
     }
     container.appendChild(row)
     tour.appendChild(container)
+}
+
+function mySearch(){
+    let search = document.getElementById('search')
+    let txt = search.value
+    localStorage.setItem('searchText', JSON.stringify(txt))
 }
