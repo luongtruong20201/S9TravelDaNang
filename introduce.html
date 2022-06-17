@@ -12,9 +12,6 @@
 </head>
 
 <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0" nonce="TBJgPf9e"></script>
-    </div>
     <header class="container-fluid ps-0 pe-0">
         <div>
             <!-- Header Top -->
@@ -34,24 +31,54 @@
                 <div class="h-100 ms-2 align-items-center d-flex">
                     <img src="https://s9traveldanang.com/wp-content/uploads/2022/04/Logo_S9-Travel-Da-Nang-1.png" class =" img__Logo"alt="" />
                 </div>
-                <div>
-                    <ul class='d-flex justify-content-between align-items-center me-2'>
-                        <li><a class = "text-white p-10" href="/#">Trang chủ</a></li>
-                        <li><a class = "text-white" href="/#">Giới thiệu</a></li>
-                        <li><a class = "text-white" href="/#">Tour quốc tế</a></li>
-                        <li><a class = "text-white" href="/#">Tour trong nước <i class="bi bi-chevron-down"></i></a></li>
-                        <li><a class = "text-white" href="/#">Cảm nang du lịch</a></li>
-                        <li><a class = "text-white" href="#contact-us">Liên hệ</a></li>
-                        <li><i class="bi bi-search"></i></li>
-                    </ul>
+                <div class="h-100">
+                    <nav class="possition-relative d-flex align-items-center h-100">
+                        <ul class='d-flex justify-content-between align-items-center me-2 menu h-100 '>
+                            <li><a class = "index text-white p-10" href="/#">Trang chủ</a></li>
+                            <li><a class = "introduce text-white" href="introduce.html">Giới thiệu</a></li>
+                            <li><a class = "text-white" href="/#">Tour quốc tế</a></li>
+                            <li>
+                                <a class = "text-white px-2" href="/#">Tour trong nước <i class="bi bi-chevron-down"></i> </a>
+                                
+                                <ul class="submenu1 position-absolute p-0 top-100 ">
+                                    <li><a href="">Tour miền bắc <i class="bi bi-chevron-right position-absolute end-0"></i></a>
+                                        
+                                        <ul class="submenu2 position-absolute">
+                                            <li><a href="">Hà Nội</a></li>
+                                            <li><a href="">Hải Phòng</a></li>
+                                            <li><a href="">Ninh Bình</a></li>
+                                            <li><a href="">Hà Giang</a></li>
+                                            <li><a href="">Hạ Long</a></li>
+                                            <li><a href="">Sapa</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">Tour miền nam</a></li>
+                                    <li><a href="">Tour miền trung<i class="bi bi-chevron-right position-absolute end-0"></i></a>
+                                        <ul class="submenu3 position-absolute">
+                                            <li><a href="">Đà Nẵng</a></li>
+                                            <li><a href="">Daily Tour</a></li>
+                                            <li><a href="">Đà Lạt</a></li>
+                                            <li><a href="">Nha Trang</a></li>
+                                            <li><a href="">Quy Nhơn</a></li>
+                                            <li><a href="">Bắc Trung Bộ</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class = "text-white" href="/#">Cảm nang du lịch</a></li>
+                            <li><a class = "text-white" href="introduce.html#contact-us">Liên hệ</a></li>  
+                            <li><a class = "text-white" href=""><i class="bi button bi-search"></i></a></li>
+                        </ul>
+                    </nav>
                 </div>
+                
                     
             </div>
             <!-- Slider -->
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                 <div class="carousel-inner w-100">
                     <!-- Slider 1 -->
-                  <div class="carousel-item active" style="background-image:url(assets/Img/Slider/slider-1.jpg);">
+                  <div class="carousel-item active" style="background-image:url(./assets/Img/Slider/slider-1.jpg);">
                     <div class="carousel-caption d-none d-md-block container position-absolute text-start" style="left:40px!important">
                       <h1 class="fs-2 mb-4">KHÁM PHÁ ĐÀ NẴNG - THÀNH PHỐ ĐÁNG SỐNG</h1>
                       <p class="mb-4">Sơn Trà - Ngũ Hành Sơn - Hội An - Bà Nà Hills</p>
@@ -59,7 +86,7 @@
                     </div>
                   </div>
                   <!-- Slider 2 -->
-                  <div class="carousel-item" style="background-image:url(assets/Img/Slider/slider-2.jpg);">
+                  <div class="carousel-item" style="background-image:url(./assets/Img/Slider/slider-2.jpg);">
                     <div class="carousel-caption d-none d-md-block container position-absolute text-start" style="left:40px!important">
                         <h1 class="fs-2 mb-4">KHÁM PHÁ XỨ HUẾ MỘNG MƠ</h1>
                         <p class="mb-4">Kinh Thành Huế - Chùa Thiên Mụ - Sông Hương - Lăng Khải Định</p>
@@ -67,7 +94,7 @@
                     </div>
                 </div>
                 <!-- Slider 3 -->
-                  <div class="carousel-item" style="background-image:url(assets/Img/Slider/slider-3.jpg);">
+                  <div class="carousel-item" style="background-image:url(./assets/Img/Slider/slider-3.jpg);">
                     <div class="carousel-caption d-none d-md-block container position-absolute text-start" style="left:40px!important">
                         <h1 class="fs-2 mb-4">KHÁM PHÁ ĐẢO NGỌC CÙ LAO </h1>
                         <p class="mb-4">Đà Nẵng - Hội An - Bà Nà Hills - Cù Lao Chàm</p>
@@ -87,15 +114,14 @@
             </div>
             <!-- Search -->
             <div class="search__tour justify-content-center d-flex">
-                <form class="input-group search__tour--items " style="width: 75%;">
-                    <input type="text" class="form-control border-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Từ khóa....">
-                    <button class="input-group-text btn bg-white pt-2 pb-2 ps-4 pe-4 " id="inputGroup-sizing-lg">
+                <form class="input-group search__tour--items " style="width: 75%;" action="/search.html">
+                    <input type="text" class="form-control border-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Từ khóa...." id="search">
+                    <button class="input-group-text btn bg-white pt-2 pb-2 ps-4 pe-4 " id="inputGroup-sizing-lg" onclick="mySearch()">
                         <i class="bi bi-search"></i></li>
                     </button>
                 </form>
                 <div></div>
             </div>
-        </div>
    
     </div>
     </main>
