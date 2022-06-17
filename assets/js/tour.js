@@ -60,7 +60,7 @@ for (let i = 0; i < tours.length; i++) {
     row.className = 'row'
     for (let j = 0; j < tours[i]['tours'].length; j++) {
         let col_3 = document.createElement('div')
-        col_3.className = 'col-3'
+        col_3.className = 'col'
         col_3.innerHTML = 
         `<div class="d-flex justify-content-between" >
         <!-- card -->
@@ -68,7 +68,7 @@ for (let i = 0; i < tours.length; i++) {
             <!-- Title of card -->
             <div class="title ">
                 <a  class = "d-flex justify-content-center" href="/#">
-                    <h2 class=" fs-5 align-item-center mb-0 p-2" style="color: #d36e24; text-overflow: ellipsis;overflow: hidden; white-space: nowrap;">${tours[i]['tours'][j]['title']}</h2>
+                    <h2 class=" fs-6 align-item-center mb-0 p-2" style="color: #d36e24; text-overflow: ellipsis;overflow: hidden; white-space: nowrap;">${tours[i]['tours'][j]['title']}</h2>
                 </a>
             </div>
             <!-- img of card -->
@@ -76,7 +76,7 @@ for (let i = 0; i < tours.length; i++) {
                 <img src="${tours[i]['tours'][j]['img']}" class="card-img-top" alt="...">
             </a href="/#">
             <!-- places -->
-            <div class="d-flex justify-content-between collapse Card__Text">
+            <div class="d-flex justify-content-between collapse py-2 Card__Text">
                 <hr class="flex-fill" style="width:9%" >
                 <span  class= " text-nowrap p-1 border border-secondary "style="text-overflow: clip;  overflow: hidden; font-size: 14px;">${tours[i]['tours'][j]['name']}</span>
                 <hr class="flex-fill" style="width:9%">
@@ -109,10 +109,10 @@ for (let i = 0; i < tours.length; i++) {
             <!-- contact -->
             <div class="d-flex bg-warning">
                 <div class="flex-fill ">
-                    <a href="" class="container ps-1 text-white">
+                    <button class ="container ps-1 text-white bg-warning border-0" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <i class="bi bi-telephone-fill me-2 pe-2"></i>
-                        <span>Đặt Tour</span>
-                    </a>
+                        Đặt tour
+                    </button>
                 </div>
                 <div class="flex-fill">
                     <a href="" class="container ps-1 text-white">
@@ -122,7 +122,55 @@ for (let i = 0; i < tours.length; i++) {
                 </div>
             </div>
         </div>
-    </div>`
+    </div>
+
+    <!-- Modal -->
+            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header ">
+                    <div class="col-md-11 d-flex justify-content-center">
+                        <h5 class="modal-title text-center" id="exampleModalLabel">Đặt tour nhanh</h5>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    
+                      <form class="row g-3">
+                        <div class="input-group">
+                            <input class="form-control bg-white" id="disabledInput" type="text" value="Tên tour: ${tours[i]['tours'][j]['title']}" disabled>
+                        </div>
+                        <div class="input-group ">
+                          <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Tên khách hàng" aria-describedby="inputGroupPrepend2" required>
+                        </div>
+                        <div class="col-md-6">
+                          <input type="tel" placeholder = "Số Điện Thoại" class="form-control" id="validationDefault01" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" placeholder = "Email" class="form-control" id="validationDefault02" required>
+                          </div>
+                        <div class="col-md-4">
+                            <input type="text" onfocus="(this.type = 'date')" placeholder="Ngày khởi hành"  class="form-control" id="validationDefault03" required>
+
+                        </div>
+                        <div class="col-md-4">
+                            <input type="number" min="10" max ="1000" placeholder = "Người lớn" class="form-control" id="validationDefault04" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="number" min="10" max ="1000" placeholder = "Trẻ em" class="form-control" id="validationDefault05" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" placeholder = "Địa chỉ" class="form-control" id="validationDefault06" required>
+                        </div>
+                        </div>
+                        <div class="col-12 pb-2 px-2">
+                          <button class=" w-100 btn btn-warning" type="submit">Đặt tour ngay </button>
+                        </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>`
         row.appendChild(col_3)
     }
     container.appendChild(row)

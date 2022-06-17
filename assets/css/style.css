@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    /* transition: all .5s; */
 }
 input, input:focus{
   outline:0px !important;
@@ -181,4 +182,11 @@ footer i{
 }
 .Contact__fixed span{
   font-size: smaller;
+}
+
+.abc:hover{
+  box-shadow:  1px 1px 1px 1px black !important;
+  background-color: #cdcdcd;
+  color: #fac624 !important;
+  -ms-transform-origin-x: 5px;
 }
