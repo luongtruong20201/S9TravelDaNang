@@ -1,30 +1,42 @@
-let txtSearch = JSON.parse(localStorage.getItem('searchText'))
-
-
-let tours = JSON.parse(localStorage.getItem('tours'))
-
+function mySearch() {
+    let seach_input = document.getElementById('search_input')
+    let text = seach_input.value
+    if (text != '') {
+        localStorage.setItem('searchText', text)
+    }
+}
 
 let search_tour = []
-for(let i = 0; i<tours.length; i++){
-    for(let j = 0; j<tours[i]['tours'].length; j++){
-        if(tours[i]['tours'][j]['name'].includes(txtSearch)){
-            search_tour.push(tours[i]['tours'][j])
+let tours = JSON.parse(localStorage.getItem('tours'))
+console.log(tours)
+// console.log(search_tour)
+
+let text = (localStorage.getItem('searchText'))
+// console.log(typeof text)
+
+function searchTour(text) {
+    for (let i = 0; i < tours.length; i++) {
+        for (let j = 0; j < tours[i]['tours'].length; j++) {
+            if (tours[i]['tours'][j]['name'].includes(text)) {
+                search_tour.push(tours[i]['tours'][j])
+            }
         }
     }
 }
 
-// console.log(search_tour)
+// console.log(text)
+searchTour(text)
+console.log(search_tour)
 
+function showTour() {
+    let content = document.getElementById('search')
+    let row = document.createElement('div')
+    row.className = 'row'
 
-let content = document.getElementById('search')
-
-let row = document.createElement('div')
-row.className = 'row'
-
-for(let i = 0; i<search_tour.length; i++){
-    let col_3 = document.createElement('div')
-    col_3.className = 'col-3'
-    col_3.innerHTML = `<div class="d-flex justify-content-between" >
+    for (let i = 0; i < search_tour.length; i++) {
+        let col_3 = document.createElement('div')
+        col_3.className = 'col-3'
+        col_3.innerHTML = `<div class="d-flex justify-content-between" >
     <!-- card -->
     <div class="card my-3" style="width: 18rem; background-color: #F3F3F3;">
         <!-- Title of card -->
@@ -85,6 +97,9 @@ for(let i = 0; i<search_tour.length; i++){
         </div>
     </div>
 </div>`
-    row.appendChild(col_3)
+        row.appendChild(col_3)
+    }
+    content.appendChild(row)
 }
-content.appendChild(row)
+
+showTour()
