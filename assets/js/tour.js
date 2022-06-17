@@ -129,8 +129,8 @@ for (let i = 0; i < tours.length; i++) {
     tour.appendChild(container)
 }
 
-function mySearch(){
-    let search = document.getElementById('search')
-    let txt = search.value
-    localStorage.setItem('searchText', JSON.stringify(txt))
-}
+// function mySearch(){
+//     let search = document.getElementById('search')
+//     let txt = search.value
+//     localStorage.setItem('searchText', JSON.stringify(txt))
+// }
