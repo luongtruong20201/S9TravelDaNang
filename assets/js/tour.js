@@ -60,7 +60,7 @@ for (let i = 0; i < tours.length; i++) {
     row.className = 'row'
     for (let j = 0; j < tours[i]['tours'].length; j++) {
         let col_3 = document.createElement('div')
-        col_3.className = 'col'
+        col_3.className = 'col-3'
         col_3.innerHTML = 
         `<div class="d-flex justify-content-between" >
         <!-- card -->
@@ -138,7 +138,7 @@ for (let i = 0; i < tours.length; i++) {
                     
                       <form class="row g-3">
                         <div class="input-group">
-                            <input class="form-control bg-white" id="disabledInput" type="text" value="Tên tour: ${tours[i]['tours'][j]['title']}" disabled>
+                            <input class="form-control bg-white" id="disabledInput" type="text" value="Tên tour: " disabled>
                         </div>
                         <div class="input-group ">
                           <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Tên khách hàng" aria-describedby="inputGroupPrepend2" required>
