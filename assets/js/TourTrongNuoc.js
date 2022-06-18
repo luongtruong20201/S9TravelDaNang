@@ -29,40 +29,19 @@ tours = [
 
         ]
     },
-    {
-        heading: "TOUR DU LỊCH QUỐC TẾ",
-        tours: [
-            { title: "Tour Trung Quốc", name: "Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/1.jpg" },
-            { title: "Tour Nhật Bản", name: "Osaka - Nara - Kyoto - Núi Fuji - Tokio", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/2.jpg" },
-            { title: "Tour Hàn Quốc", name: "Seoul - Nami - Everland", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/3.jpg" },
-        ]
-    }
 ]
-// console.log(localStorage.setItem("tours", JSON.stringify(tour)));
 
-// const txt = JSON.stringify(tours, undefined, 4)
-// localStorage.setItem("tours", txt)
-
-// const txt = JSON.stringify(tours, undefined, 4)
-// localStorage.setItem('tours', txt)
-
-let tour = document.getElementById('content')
+let tour = document.getElementById('TourTrongNuoc')
 for (let i = 0; i < tours.length; i++) {
     let container = document.createElement('div')
     container.className = 'container'
-    let heading = document.createElement('div')
-    heading.className = 'my-4 d-flex row'
-    heading.innerHTML = `<div class="bg-warning border-danger border-top border-5 w-100 d-flex justify-content-center p-2">
-    <h2 class="text-white fs-5 fw-bold mb-0">${tours[i]['heading']}</h2>
-</div>`
-    container.appendChild(heading)
     let row = document.createElement('div')
     row.className = 'row'
     for (let j = 0; j < tours[i]['tours'].length; j++) {
         let col_3 = document.createElement('div')
         col_3.className = 'col-3'
         col_3.innerHTML = 
-        `<div class="d-flex justify-content-between" >
+        `<div class="d-flex justify-content-between container" >
         <!-- card -->
         <div class="card my-3" style="width: 18rem; background-color: #F3F3F3;">
             <!-- Title of card -->
@@ -176,10 +155,3 @@ for (let i = 0; i < tours.length; i++) {
     container.appendChild(row)
     tour.appendChild(container)
 }
-
-// function mySearch(){
-//     let search = document.getElementById('search')
-//     let txt = search.value
-//     localStorage.setItem('searchText', JSON.stringify(txt))
-// }
-
