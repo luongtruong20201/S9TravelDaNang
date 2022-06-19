@@ -132,7 +132,7 @@
                                                 <li><a href="">Bắc Trung Bộ</a></li>
                                             </ul>
                                         </li>
-                                    </ul>
+                                    </ul> 
                                 </li>
                                 <li><a class = "text-white" href="/#">Cảm nang du lịch</a></li>
                                 <li><a class = "text-white" href="introduce.html#contact-us">Liên hệ</a></li>  
@@ -272,7 +272,7 @@
                         <h2 class="text-center fs-5">CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ DU LỊCH S9 ĐÀ NẴNG – S9 TRAVEL ĐÀ NẴNG</h2>
                         <!-- Contact address -->
                         <div class="row">
-                            <ul class ="col-xxl-6 col-sm-12 d-flex flex-column">
+                            <ul class ="col-xxl-6 col-sm-12  d-flex flex-column">
                                 <li>
                                     <a href="mailto:s9traveldn@gmail.com">
                                         <i class="bi bi-person"></i>
@@ -317,7 +317,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <div class="col-xxl-6 col-sm-12">
+                            <div class="col-xxl-6 col-sm-12 ">
                                 <div class="fb-page " data-href="https://www.facebook.com/s9traveldanang" data-tabs="timeline" data-width="450" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/s9traveldanang" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/s9traveldanang">S9 Travel Đà Nẵng</a></blockquote></div>
                             </div>
                         </div> 
@@ -378,23 +378,5 @@
     <script src="/assets/js/index.js"></script>
     <script src="/assets/js/tour.js"></script>
     <script src="/assets/js/search.js"></script>
-    <script>
-        let Header__Main = document.getElementsByClassName("Header__Main-Fixed")
-        window.addEventListener('scroll',() =>{
-            const scrolled = window.scrollY;
-            console.log(scrolled);
-            if(scrolled > 120){
-                for(var i = 0;i <Header__Main.length;i++)
-                {
-                    Header__Main[i].style.display = "block";
-                }
-            }
-            else{
-                for(var i = 0;i <Header__Main.length;i++)
-                {
-                    Header__Main[i].style.display = "none";
-                }
-            }
-        })
-    </script>
+    <script src="/assets/js/Fixed__Header.js"></script>
 </body>
