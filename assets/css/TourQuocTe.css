@@ -20,7 +20,13 @@ hr {
   display:block;
   height: 1px;
 }
+html,body{
+  overflow-x: hidden ;
+}
 /* css cho cac the html Header*/
+.Header__Main-Fixed{
+  display: none;
+}
 .Header__Top i{
   margin-right: 6px;
 
@@ -138,29 +144,163 @@ hr {
   transform: translateY(-5px);
 }
 
+/* css cho footer */
+.Form_insign{
+  width:75%;
+  border-radius: 10px;
+}
+.Contact__Footer{
+  padding-top:100px
+}
+footer a span{
+  color: #000;
+}
+footer i{
+  color: #FAC624;
+  padding-right: 2px;
+}
 /* fixed contact */
 .Contact__fixed{
+  position: fixed;
+  left: auto;
+  right: 0;
+  bottom: 50px;
+  z-index: 999;
+  border-right: 0;
+  width: 70px;
+  background-color: #fff;
+  padding: 10px 15px 10px 5px;
+  box-sizing: border-box;
+
+}
+.Contact__fixed div{
+  margin-bottom: 5px;
+  border: 0;
+}
+.Contact__fixed img{
+  width: 45px;
+  margin: auto;
+  margin-bottom: -10px;
+  border-radius: 100%;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid #cdcdcd;
+}
+.Contact__fixed span{
+  font-size: smaller;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* responsive */
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+  .Form_insign{
+    width: 95%;
+    margin-top: 10px ;
+  }
+  footer{
+    margin-top: 12rem;
+  }
+  .Contact__Footer{
+    padding-top: 12rem!important;
+  }
+  /* Responsive for Contact fixed */
+  .Contact__fixed{
     position: fixed;
-    left: auto;
-    right: 0;
-    bottom: 50px;
-    z-index: 999;
-    border-right: 0;
-    width: 70px;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: #fff;
-    padding: 10px 15px 10px 5px;
+    padding: 0px;
+    justify-content: space-between;
+  }
+  .Contact__fixed div{
+    width: 19%;
+    display: block;
+  }
+  .Contact__fixed div a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Contact__fixed div a img{
+    margin-top: -20px;
+    margin-bottom: 0;
+    /* width: 45px; */
+    max-width: 55px !important;
+  }
+  .Contact__fixed div a .img__Call{
+    width: 80px !important;
+    margin-top: -40px !important;
+    max-width: 80% !important;
+    background-color: #138311;
+    padding: 15px;
     box-sizing: border-box;
   }
-  .Contact__fixed img{
-    width: 4rem;
-    margin: auto;
-    margin-bottom: -10px;
-    border-radius: 100%;
-    background-color: white;
-    padding: 5px;
-    border: 1px solid #cdcdcd;
+  footer{
+    margin-top: 10rem;
   }
-  .Contact__fixed span{
-    font-size: smaller;
+}
+/* tablet */
+@media all and (min-width: 481px) and  (max-width: 1024px ) {
+  .Form_insign{
+    width: 95% !important;
   }
+  .Contact__Footer{
+    padding-top: 10rem!important;
+  }
+    /* Responsive for Contact fixed */
+    .Contact__fixed{
+      position: fixed;
+      display: flex;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #fff;
+      padding: 0px;
+      justify-content: space-between;
+    }
+    .Contact__fixed div{
+      width: 19%;
+      display: block;
+    }
+    .Contact__fixed div a{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   
+    .Contact__fixed div a img{
+      margin-top: -20px;
+      margin-bottom: 0;
+      /* width: 45px; */
+      max-width: 55px !important;
+    }
+    .Contact__fixed div a .img__Call{
+      width: 80px !important;
+      margin-top: -40px !important;
+      max-width: 80% !important;
+      background-color: #138311;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    footer{
+      margin-top: 8rem;
+    }
+
+}
+/* PC */
+@media all and ( min-width: 1025px) {
+  .Contact__Footer{
+    padding-top: 10rem;
+  }
+  footer{
+    margin-top: 8rem;
+  }
+}

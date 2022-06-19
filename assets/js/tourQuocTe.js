@@ -17,11 +17,11 @@ for (let i = 0; i < tours.length; i++) {
     row.className = 'row'
     for (let j = 0; j < tours[i]['tours'].length; j++) {
         let col_3 = document.createElement('div')
-        col_3.className = 'col'
+        col_3.className = 'col-sm-12 col-xxl-3 col-lg-4 col-md-6'
         col_3.innerHTML = 
-        `<div class="d-flex justify-content-between container" >
+        `<div class="d-flex justify-content-between " >
         <!-- card -->
-        <div class="card my-3" style="width: 18rem; background-color: #F3F3F3;">
+        <div class="card my-3 w-100" style=" background-color: #F3F3F3;">
             <!-- Title of card -->
             <div class="title ">
                 <a  class = "d-flex justify-content-center" href="/#">
@@ -39,7 +39,7 @@ for (let i = 0; i < tours.length; i++) {
                 <hr class="flex-fill" style="width:9%">
             </div>
             <!-- information -->
-            <div class="card-body px-2 py-2 container">
+            <div class="card-body px-2 py-2 container-fluid d-flex align-item-center">
                 <ul class="elementor-icon-list-items m-0 p-0">
                     <li class="elementor-icon-list-item pb-1">
                         <span>
