@@ -304,4 +304,7 @@ footer i{
   .Contact__Footer{
     padding-top: 10rem;
   }
+  footer{
+    margin-top: 10rem;
+  }
 }
