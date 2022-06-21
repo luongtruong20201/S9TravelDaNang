@@ -32,7 +32,6 @@ heading.addEventListener('change', () => {
     let table = document.getElementById('table')
     table.innerHTML = `
     <tr>
-        <th class="text-center">#</th>
         <th class="text-center">Tour</th>
         <th class="text-center">Title</th>
         <th class="text-center">Price</th>
@@ -44,7 +43,7 @@ heading.addEventListener('change', () => {
 
     for (let j = 0; j < tours[select]['tours'].length; j++) {
         let tablerow = document.createElement('tr')
-        tablerow.innerHTML = `<td class="text-center">${k}</td>
+        tablerow.innerHTML = `
                         <td class="text-center">${tours[select]['tours'][j]['name']}</td>
                         <td class="text-center">${tours[select]['tours'][j]['title']}</td>
                         <td class="text-center">${tours[select]['tours'][j]['price']}</td>
@@ -77,7 +76,20 @@ heading.addEventListener('change', () => {
 function deleteTour(row) {
     var d = row.parentNode.parentNode.rowIndex;
     console.log(d)
+    let name = document.getElementById('table').rows[d].cells[0].innerHTML
+    console.log(name)
     document.getElementById('table').deleteRow(d);
+    let txt = localStorage.getItem('tours')
+    tours = JSON.parse(txt)
+    console.log(tours)
+    let select = document.getElementById('heading').value
+    tours[select]['tours'] = tours[select]['tours'].filter((tour) => {
+        return tour.name != name
+    })
+    // console.log(tours)
+    // localStorage.setItem(JSON.stringify(tours, undefined, 4))
+    txt = JSON.stringify(tours, undefined, 4)
+    localStorage.setItem('tours', txt)
 }
 
 
