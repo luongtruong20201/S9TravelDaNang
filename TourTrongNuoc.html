@@ -36,7 +36,7 @@
             <div class="Header__Main d-flex justify-content-between w-100 align-items-center bg-white">
                 <div class="h-100 ms-2 align-items-center d-flex">
                     <a href="index.html">
-                        <img src="https://s9traveldanang.com/wp-content/uploads/2022/04/Logo_S9-Travel-Da-Nang-1.png" class =" img__Logo"alt="" />
+                        <img src="assets/Img/WebLogo/LogoB.png" class =" img__Logo"alt="" />
                     </a>
                 </div>
                 <div class="h-100">
@@ -46,10 +46,9 @@
                             <li><a class = "introduce text-black" href="introduce.html">Giới thiệu</a></li>
                             <li><a class = "text-black" href="/TourQuocTe.html"  >Tour quốc tế</a></li>
                             <li>
-                                <a class = "text-black px-2" href="/TourTrongNuoc.html" style="color:#fac624!important ">Tour trong nước <i class="bi bi-chevron-down"></i> </a>
-                            
+                                <a class = "text-black px-2" href="TourTrongNuoc.html" style="color:#fac624!important ">Tour trong nước <i class="bi bi-chevron-down"></i> </a>
                                 <ul class="submenu1 position-absolute p-0 top-100 ">
-                                    <li><a href="">Tour miền bắc <i class="bi bi-chevron-right position-absolute end-0"></i></a>
+                                    <li><a href="TourMienBac.html">Tour miền bắc <i class="bi bi-chevron-right position-absolute end-0"></i></a>
                                     
                                         <ul class="submenu2 position-absolute">
                                             <li><a href="">Hà Nội</a></li>
@@ -60,8 +59,8 @@
                                             <li><a href="">Sapa</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="">Tour miền nam</a></li>
-                                    <li><a href="">Tour miền trung<i class="bi bi-chevron-right position-absolute end-0"></i></a>
+                                    <li><a href="TourMienNam.html">Tour miền nam</a></li>
+                                    <li><a href="TourMienTrung.html">Tour miền trung<i class="bi bi-chevron-right position-absolute end-0"></i></a>
                                         <ul class="submenu3 position-absolute">
                                             <li><a href="">Đà Nẵng</a></li>
                                             <li><a href="">Daily Tour</a></li>
@@ -75,9 +74,23 @@
                             </li>
                             <li><a class = "text-black" href="/#">Cảm nang du lịch</a></li>
                             <li><a class = "text-black" href="introduce.html#contact-us">Liên hệ</a></li>  
-                            <li><a class = "text-black" href=""><i class="bi button bi-search"></i></a></li>
+                            <!-- Tim kiem cua header fixed-->
+                            <li><a class = "text-white" href="#">
+                                <button class="input-group-text btn text-dark " id="Btn-Seach-hf" onclick="ShowInputhf()">
+                                    <i class="bi bi-search"></i></li>
+                                </button>
+                            </a></li>
                         </ul>
                     </nav>
+                </div>
+                <!-- Thanh tim kiem -->
+                <div class="h-100 w-100 position-absolute" id = "input_search-hf"style="display: none;">
+                    <div class="row d-flex h-100 w-100 m-0">
+                        <form class="input-group search__tour--items bg-white  h-100 p-0 flex-grow-1" style="width: 95%;opacity: 0.9;"action="/search.html">
+                            <input type="text" class="form-control border-0 p-4 h-100 " aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="search" style=" outline: 0; opacity:0.9; color:#fac624">
+                        </form>
+                        <button class=" border-0 text-warning text-end bg-white p-4 " id ="btn_close-hf" onclick = "closeInputhf()" style="width:5%;opacity: 0.9; color:#fac624"><i class="bi bi-x-lg"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -90,7 +103,7 @@
             <div class="Header__Main d-flex justify-content-between w-100 align-items-center position-absolute">
                 <div class="h-100 ms-2 align-items-center d-flex">
                     <a href="/index.html">
-                        <img src="https://s9traveldanang.com/wp-content/uploads/2022/04/Logo_S9-Travel-Da-Nang-1.png" class =" img__Logo"alt="" />
+                        <img src="assets/Img/WebLogo/LogoB.png" class =" img__Logo"alt="" />
                     </a>
                 </div>
                 <div class="h-100">
@@ -103,7 +116,7 @@
                                 <a class = "text-white px-2" href="/TourTrongNuoc.html" style="color:#fac624!important ">Tour trong nước <i class="bi bi-chevron-down"></i> </a>
                                 
                                 <ul class="submenu1 position-absolute p-0 top-100 ">
-                                    <li><a href="">Tour miền bắc <i class="bi bi-chevron-right position-absolute end-0"></i></a>
+                                    <li><a href="TourMienBac.html">Tour miền bắc <i class="bi bi-chevron-right position-absolute end-0"></i></a>
                                         
                                         <ul class="submenu2 position-absolute">
                                             <li><a href="">Hà Nội</a></li>
@@ -114,8 +127,8 @@
                                             <li><a href="">Sapa</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="">Tour miền nam</a></li>
-                                    <li><a href="">Tour miền trung<i class="bi bi-chevron-right position-absolute end-0"></i></a>
+                                    <li><a href="TourMienNam.html">Tour miền nam</a></li>
+                                    <li><a href="TourMienTrung.html">Tour miền trung<i class="bi bi-chevron-right position-absolute end-0"></i></a>
                                         <ul class="submenu3 position-absolute">
                                             <li><a href="">Đà Nẵng</a></li>
                                             <li><a href="">Daily Tour</a></li>
@@ -129,13 +142,27 @@
                             </li>
                             <li><a class = "text-white" href="/#">Cảm nang du lịch</a></li>
                             <li><a class = "text-white" href="introduce.html#contact-us">Liên hệ</a></li>  
-                            <li><a class = "text-white" href=""><i class="bi button bi-search"></i></a></li>
+                            <!-- Tim kiem -->
+                            <li><a class = "text-white" href="#">
+                                <button class="input-group-text btn text-white " id="Btn-Seach" onclick="ShowInput()">
+                                    <i class="bi bi-search"></i></li>
+                                </button>
+                            </a></li>
                         </ul>
                     </nav>
                 </div>
+                <!-- Thanh tim kiem -->
+                <div class="h-100 w-100 position-absolute" id = "input_search"style="display: none;">
+                    <div class="row d-flex h-100 w-100 m-0">
+                        <form class="input-group search__tour--items bg-white  h-100 p-0 flex-grow-1" style="width: 95%;opacity: 0.9;"action="/search.html">
+                            <input type="text" class="form-control border-0 p-4 h-100 " aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="search" style=" outline: 0; opacity:0.9; color:#fac624">
+                        </form>
+                        <button class=" border-0 text-warning text-end bg-white p-4 " id ="btn_close" onclick = "closeInput()" style="width:5%;opacity: 0.9; color:#fac624"><i class="bi bi-x-lg"></i></button>
+                    </div>
+                </div>
+            </div>
                 
                     
-            </div>
             <!-- Slider -->
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -154,7 +181,7 @@
                 </div>
             </div>
         </div>
-        <div id = "TourTrongNuoc">
+        <div id = "content">
 
         </div>
     </main>
@@ -332,8 +359,12 @@
     </footer>
 </body>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/assets/js/index.js"></script>
-    <script src="/assets/js/TourTrongNuoc.js"></script>
+    <!-- <script src="/assets/js/index.js"></script> -->
+    <!-- <script src="/assets/js/TourTrongNuoc.js"></script> -->
     <script src="/assets/js/search.js"></script>
     <script src = "assets/js/Fixed__Header.js"></script>
+    <script src="/assets/js/tour.js"></script>
+    <script>
+        window.onload = function(){getToursTN()}
+    </script>
 </html>

@@ -1,15 +1,14 @@
 tours = [
     {
-        heading: "TOUR DU LỊCH QUỐC TẾ",
+        heading: "TOUR DU LỊCH TRONG NƯỚC",
         tours: [
-            { title: "Tour Trung Quốc", name: "Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/1.jpg" },
-            { title: "Tour Nhật Bản", name: "Osaka - Nara - Kyoto - Núi Fuji - Tokio", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/2.jpg" },
-            { title: "Tour Hàn Quốc", name: "Seoul - Nami - Everland", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/3.jpg" },
+            { title: "Thiên  đường nghỉ dưỡng Phú Quốc", name: "Phú Quốc", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/4.jpg" },
+            { title: "Khám phá Miền Tây", name: "Miền Tây", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/5.jpg" },
         ]
-    }
+    },
 ]
 
-let tour = document.getElementById('TourQuocTe')
+let tour = document.getElementById('TourMienNam')
 for (let i = 0; i < tours.length; i++) {
     let container = document.createElement('div')
     container.className = 'container'
@@ -19,7 +18,7 @@ for (let i = 0; i < tours.length; i++) {
         let col_3 = document.createElement('div')
         col_3.className = 'col-sm-12 col-xxl-3 col-lg-4 col-md-6'
         col_3.innerHTML = 
-        `<div class="d-flex justify-content-between " >
+        `<div class="d-flex justify-content-between" >
         <!-- card -->
         <div class="card my-3 w-100" style=" background-color: #F3F3F3;">
             <!-- Title of card -->

@@ -1,26 +1,7 @@
 tours = [
     {
-        heading: "TOUR DU LỊCH ĐÀ NẴNG",
-        tours: [
-            { title: "Hành trình Di sản Miền Trung", name: "Đà Nẵng - Hội An - Quảng Trị - Quảng Bình - Huế'", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/1.jpg" },
-            { title: "Đà Nẵng - Hội An - Cố đô Huế", name: "Đà Nẵng - Hội An - huế", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/2.jpg" },
-            { title: "Đà Nẵng - Đảo Lý Sơn", name: "Đà Nẵng - Đảo Lý Sơn", price: "Liên hệ để biết thêm", time: "2 Ngày 1 Đêm", vehicle: "Cano, Ô tô", img: "assets/Img/Tours/Tour_DaNang/3.jpg" },
-            // { title: "Đà Nẵng - Đảo Lý Sơn", name: "Đà Nẵng - Đảo Lý Sơn", price: "Liên hệ để biết thêm", time: "2 Ngày 1 Đêm", vehicle: "Cano, Ô tô", img: "assets/Img/Tours/Tour_DaNang/4.jpg" },
-            { title: "Đà Nẵng - Mỹ Sơn - Hội An", name: "Đà Nẵng - Mỹ Sơn - Hội An", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/5.jpg" },
-            { title: "Đà Nẵng - Hội An - Vinpearl Land Hội An", name: "Đà Nẵng - Hội An - Bà Nà Hills - Vinpearl Land Nam Hội An", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/6.jpg" },
-            { title: "Đà Nẵng - Hội An - Núi Thần Tài", name: "Đà Nẵng - Hội An - Bà Nà Hills - Núi Thần Tài", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/7.jpg" },
-            { title: "Đà Nẵng - Hội An - Cù Lao Chàm", name: "Đà Nẵng - Hội An - Bà Nà Hills - Cù Lao Chàm", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/8.jpg" },
-            { title: "Đà Nẵng - Hội An - Bà Nà Hills", name: "Đà Nẵng - Hội An - Bà Nà Hills", price: "Liên hệ để biết thêm", time: "3 Ngày 2 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/1.jpg" },            
-        ]
-    },
-    {
         heading: "TOUR DU LỊCH TRONG NƯỚC",
         tours: [
-            { title: "Đà Nẵng - Nha Trang - Đà Lạt - Quy Nhơn", name: "Đà Nẵng - Nha Trang - Đà Lạt - Quy Nhơn", price: "Liên hệ để biết thêm", time: "5 Ngày 4 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_TrongNuoc/1.jpg" },
-            { title: "Đà Nẵng - VQG Bạch Mã", name: "Đà Nẵng - Vườn quốc gia Bạch Mã", price: "Liên hệ để biết thêm", time: "1 Ngày", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_TrongNuoc/2.jpg" },
-            { title: "Đà Nẵng - Mỹ Sơn - Hội An", name: "Đà Nẵng - Mỹ Sơn - Hội An", price: "750.000 VNĐ", time: "1 Ngày", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_TrongNuoc/3.jpg" },
-            { title: "Thiên  đường nghỉ dưỡng Phú Quốc", name: "Phú Quốc", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/4.jpg" },
-            { title: "Khám phá Miền Tây", name: "Miền Tây", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/5.jpg" },
             { title: "Đà Nẵng - Hà Nội - Ninh Bình", name: "Đà Nẵng - Hà Nội - Ninh Bình", price: "Liên hệ để biết thêm", time: "3 Ngày 2 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/6.jpg" },
             { title: "Hà Nội - Hạ Long - Ninh Bình", name: "Đà Nẵng - Hà Nội - Hạ Long - Ninh Bình - Đà Nẵng", price: "Liên hệ để biết thêm", time: "5 Ngày 4 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/7.jpg" },
             { title: "Hà Nội - Ninh Bình - Sapa - Hạ Long", name: "Đà Nẵng - Hà Nội - Hạ Long - Ninh Bình - Đà Nẵng", price: "Liên hệ để biết thêm", time: "5 Ngày 4 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/8.jpg" },
@@ -31,7 +12,7 @@ tours = [
     },
 ]
 
-let tour = document.getElementById('TourTrongNuoc')
+let tour = document.getElementById('TourMienBac')
 for (let i = 0; i < tours.length; i++) {
     let container = document.createElement('div')
     container.className = 'container'
