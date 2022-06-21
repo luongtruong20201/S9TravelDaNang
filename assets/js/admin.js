@@ -1,29 +1,60 @@
 var tours = JSON.parse(localStorage.getItem('tours'))
 console.log(tours)
 
-let heading = document.getElementById('heading')
+function addHeading(str) {
+  let heading = document.getElementById(str)
 
-for(let i = 0; i<tours.length; i++){
+  for (let i = 0; i < tours.length; i++) {
     heading.innerHTML += `<option value=${i}>${tours[i].heading}</option>`
+  }
 }
 
+addHeading('heading')
+addHeading('heading1')
+
+function nameOfFile(){
+  let fileName = document.getElementById('anhtour').value
+  let txt = "C:\\fakepath\\"
+  return fileName.slice(txt.length, fileName.length)
+}
+
+function themTour(){
+  let theloai = document.getElementById('heading1').value
+  let tentour = document.getElementById('tentour').value
+  let giatien = document.getElementById('giatien').value
+  let thoigian = document.getElementById('date').value
+  let phuongtien = document.getElementById('phuongtien').value
+  // let anhtour = document.getElementById('anhtour').value
+  let anhtour = nameOfFile()
+  let link = ["assets/Img/Tours/Tour_DaNang/", "assets/Img/Tours/Tour_TrongNuoc/", "assets/Img/Tours/Tour_QuocTe/"]
+  // console.log(anhtour)
+  let diadiem = document.getElementById('diadiem').value
+  let tour = {name: tentour, destination: diadiem, price: giatien, time: thoigian, vehicle: phuongtien, img: link[theloai] + anhtour}
+  // console.log(listOfTours, tour)
+  let listOfTours = JSON.parse(localStorage.getItem('tours'))
+  listOfTours[theloai].tours.push(tour)
+  let txt = JSON.stringify(listOfTours, undefined, 4)
+  localStorage.setItem('tours', txt)
+  console.log(listOfTours)
+  // console.log(anhtour)
+}
 // console.log(tours[0]['tours'][0]['title'])
 heading.addEventListener('change', () => {
-    let value = document.getElementById('heading').value
-    // console.log(value)
-    let tableBody = document.getElementById('tableBody')
-    tableBody.innerHTML = ``
-    for(let i = 0; i<tours[value]['tours'].length; i++){
-        let tr = document.createElement('tr')
-        tr.innerHTML = `
+  let value = document.getElementById('heading').value
+  // console.log(value)
+  let tableBody = document.getElementById('tableBody')
+  tableBody.innerHTML = ``
+  for (let i = 0; i < tours[value]['tours'].length; i++) {
+    let tr = document.createElement('tr')
+    tr.innerHTML = `
         <td class="text-center">${i + 1}</td>
-        <td class="text-center">${tours[value]['tours'][i]['title']}</td>
         <td class="text-center">${tours[value]['tours'][i]['name']}</td>
+        <td class="text-center">${tours[value]['tours'][i]['destination']}</td>
         <td class="text-center">${tours[value]['tours'][i]['price']}</td>
         <td class="text-center">${tours[value]['tours'][i]['time']}</td>
         <td class="text-center">${tours[value]['tours'][i]['vehicle']}</td>
         <td class="text-center">
-            <button class="btn btn-success" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModalToggle2"> Sửa <i class="bi bi-pen-fill"></i></button>
+            <button class="btn btn-primary" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModalToggle2"> Sửa <i class="bi bi-pen-fill"></i></button>
             <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
                                                   <div class="modal-dialog modal-dialog-centered">
                                                     <div class="modal-content">
@@ -80,10 +111,10 @@ heading.addEventListener('change', () => {
                                                 </div>
         </td>
         <td class="text-center">
-            <button class="btn btn-success" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModalToggle2"> Sửa <i class="bi bi-pen-fill"></i></button>
+            <button class="btn btn-danger" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModalToggle2"> Xóa <i class="bi bi-pen-fill"></i></button>
         </td>
         `
-        // console.log(tours[value].tours[i].name)
+    // console.log(tours[value].tours[i].name)
     tableBody.appendChild(tr)
-    }
+  }
 })
