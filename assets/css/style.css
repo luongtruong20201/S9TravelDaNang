@@ -300,6 +300,12 @@ footer i{
     visibility: hidden;
   }
   /*  */
+  /* Header Top */
+  .Header__Top{
+    flex-direction: column;
+    align-items: center!important;
+  }
+  /*  */
   .Menu_Header{
     display: none;
   }
@@ -352,6 +358,77 @@ footer i{
 }
 /* tablet */
 @media all and (min-width: 481px) and  (max-width: 1024px ) {
+    /* Responsive for Menu Header */
+    #toggle-button-show{
+      display: flex;
+    }
+    #toggle-button-close{
+      display: none;
+    }
+  
+    #navbar-links{
+      flex-direction: column;
+      align-items: flex-start;
+      height: 100%;
+      position: absolute;
+      top: 100%;
+      left:0;
+      display: none;
+      padding: 0;
+    }
+    #navbar-links ul{
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 0;
+      justify-content: start;
+    }
+    #navbar-links li{
+      margin-bottom: 3px;
+      width: 100%;
+      justify-content: start;
+  
+    }
+    #navbar-links ul li i, .submenu1,.submenu2,.submenu3{
+      visibility: hidden;
+    }
+    /*  */
+
+    /* header fixed */
+    #toggle-button-showhf{
+      display: flex;
+    }
+    #toggle-button-closehf{
+      display: none;
+    }
+  
+    #navbar-linkshf{
+      flex-direction: column;
+      align-items: flex-start;
+      height: 100%;
+      position: absolute;
+      top: 100%;
+      left:0;
+      display: none;
+      padding: 0;
+    }
+    #navbar-linkshf ul{
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 0;
+      justify-content: start;
+    }
+    #navbar-linkshf li{
+      margin-bottom: 3px;
+      width: 100%;
+      justify-content: start;
+  
+    }
+    #navbar-linkshf ul li i, .submenu1,.submenu2,.submenu3{
+      visibility: hidden;
+    }
+  /*  */
   .Form_insign{
     width: 95% !important;
   }
