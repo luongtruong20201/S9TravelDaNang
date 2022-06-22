@@ -8,7 +8,7 @@
 /* css cho the html */
 a {
     text-decoration: none;
-
+    color: #000;
 }
 
 ul {
@@ -175,62 +175,113 @@ body {
 }
 
 /* css cho content */
-.page-content{
+/* Main content */
+.page-content {
     display: flex;
     padding-left: 15%;
     padding-top: 20px;
     padding-bottom: 150px;
     width: 85%;
-    gap: 50px;
+    gap: 20px;
 }
 
-.main-content{
+.main-content {
     width: 75%;
 }
 
-.icon-top i{
+.icon-top i {
     color: #FFCC00;
 }
-.main-content-img{
+
+.main-content-img {
     width: 100%;
     padding-top: 10px;
-    padding-bottom: 30px ;
+    padding-bottom: 30px;
 }
-.main-more{
+
+.main-more {
     padding-top: 40px;
 }
-.main-more-link{
+
+.main-more-link {
+    padding-top: 20px;
     display: flex;
     gap: 5px;
 }
-.card-text-img{
+
+.card-text-img {
     position: absolute;
 
- }
-.card-title{
+}
+
+.card-title {
     font-size: 16px;
 }
 
- .card-img-top{
+.card-img-top {
     height: 180px;
- }
+}
 
- .card-body a{
+.card-body a {
     color: #000;
- }
+}
 
- .card{
+.card {
     transition: all .5s;
-  }
- .card:hover{
-    box-shadow:  0px 0px 10px 2px rgb(0 0 0 / 80%);
-    transform: translateY(-5px);
-  }
+}
 
-.side-content{
-    background-color: #FFCC00;
+.card:hover {
+    box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 80%);
+    transform: translateY(-5px);
+}
+/* Side content */
+.side-content {
     width: 25%;
 }
+
+.Danhmuc-title{
+    background-color: #FFCC00;
+}
+
+.Danhmuc-list i{
+    color: #FFCC00;
+}
+
+.Newtour-title {
+    background-color: #FFCC00;
+    color: #fff;
+}
+
+.Newtour-card {
+    display: flex;
+    gap: 5px;
+    transition: all .5s;
+}
+
+.card-img-left {
+    width: 80px;
+    height: 60px;
+}
+
+.Newtour-card-body a {
+    font-size: 13px;
+    color: #000;
+}
+.Newtour-card-body{
+    font-size: 13px;
+    color: #000;
+}
+
+.Newtour-card-body i{
+    color: #FAC624;
+}
+
+
+.Newtour-card:hover {
+    box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 70%);
+    transform: translateY(-1px);
+}
+
 
 /* css cho footer */
 .Form_insign {
