@@ -2,28 +2,28 @@
 //     {
 //         heading: "TOUR DU LỊCH ĐÀ NẴNG",
 //         tours: [
-//             { name: "Hành trình Di sản Miền Trung", destination: "Đà Nẵng - Hội An - Quảng Trị - Quảng Bình - Huế'", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/1.jpg" },
-//             { name: "Đà Nẵng - Hội An - Cố đô Huế", destination: "Đà Nẵng - Hội An - huế", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/2.jpg" },
-//             { name: "Đà Nẵng - Đảo Lý Sơn", destination: "Đà Nẵng - Đảo Lý Sơn", price: "Liên hệ để biết thêm", time: "2 Ngày 1 Đêm", vehicle: "Cano, Ô tô", img: "assets/Img/Tours/Tour_DaNang/3.jpg" },
+//             { id: 1, name: "Hành trình Di sản Miền Trung", destination: "Đà Nẵng - Hội An - Quảng Trị - Quảng Bình - Huế'", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/1.jpg" },
+//             { id: 2, name: "Đà Nẵng - Hội An - Cố đô Huế", destination: "Đà Nẵng - Hội An - huế", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/2.jpg" },
+//             { id: 3, name: "Đà Nẵng - Đảo Lý Sơn", destination: "Đà Nẵng - Đảo Lý Sơn", price: "Liên hệ để biết thêm", time: "2 Ngày 1 Đêm", vehicle: "Cano, Ô tô", img: "assets/Img/Tours/Tour_DaNang/3.jpg" },
 //             // { name: "Đà Nẵng - Đảo Lý Sơn", name: "Đà Nẵng - Đảo Lý Sơn", price: "Liên hệ để biết thêm", time: "2 Ngày 1 Đêm", vehicle: "Cano, Ô tô", img: "assets/Img/Tours/Tour_DaNang/4.jpg" },
-//             { name: "Đà Nẵng - Mỹ Sơn - Hội An", destination: "Đà Nẵng - Mỹ Sơn - Hội An", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/5.jpg" },
-//             { name: "Đà Nẵng - Hội An - Vinpearl Land Hội An", destination: "Đà Nẵng - Hội An - Bà Nà Hills - Vinpearl Land Nam Hội An", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/6.jpg" },
-//             { name: "Đà Nẵng - Hội An - Núi Thần Tài", destination: "Đà Nẵng - Hội An - Bà Nà Hills - Núi Thần Tài", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/7.jpg" },
-//             { name: "Đà Nẵng - Hội An - Cù Lao Chàm", destination: "Đà Nẵng - Hội An - Bà Nà Hills - Cù Lao Chàm", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/8.jpg" },
-//             { name: "Đà Nẵng - Hội An - Bà Nà Hills", destination: "Đà Nẵng - Hội An - Bà Nà Hills", price: "Liên hệ để biết thêm", time: "3 Ngày 2 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/1.jpg" },
+//             { id: 4, name: "Đà Nẵng - Mỹ Sơn - Hội An", destination: "Đà Nẵng - Mỹ Sơn - Hội An", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/5.jpg" },
+//             { id: 5, name: "Đà Nẵng - Hội An - Vinpearl Land Hội An", destination: "Đà Nẵng - Hội An - Bà Nà Hills - Vinpearl Land Nam Hội An", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/6.jpg" },
+//             { id: 6, name: "Đà Nẵng - Hội An - Núi Thần Tài", destination: "Đà Nẵng - Hội An - Bà Nà Hills - Núi Thần Tài", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/7.jpg" },
+//             { id:7, name: "Đà Nẵng - Hội An - Cù Lao Chàm", destination: "Đà Nẵng - Hội An - Bà Nà Hills - Cù Lao Chàm", price: "Liên hệ để biết thêm", time: "4 Ngày 3 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/8.jpg" },
+//             { id: 8, name: "Đà Nẵng - Hội An - Bà Nà Hills", destination: "Đà Nẵng - Hội An - Bà Nà Hills", price: "Liên hệ để biết thêm", time: "3 Ngày 2 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_DaNang/1.jpg" },
 //         ]
 //     },
 //     {
 //         heading: "TOUR DU LỊCH TRONG NƯỚC",
 //         tours: [
-//             { name: "Đà Nẵng - Nha Trang - Đà Lạt - Quy Nhơn", destination: "Đà Nẵng - Nha Trang - Đà Lạt - Quy Nhơn", price: "Liên hệ để biết thêm", time: "5 Ngày 4 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_TrongNuoc/1.jpg" },
-//             { name: "Đà Nẵng - VQG Bạch Mã", destination: "Đà Nẵng - Vườn quốc gia Bạch Mã", price: "Liên hệ để biết thêm", time: "1 Ngày", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_TrongNuoc/2.jpg" },
-//             { name: "Đà Nẵng - Mỹ Sơn - Hội An", destination: "Đà Nẵng - Mỹ Sơn - Hội An", price: "750.000 VNĐ", time: "1 Ngày", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_TrongNuoc/3.jpg" },
-//             { name: "Thiên  đường nghỉ dưỡng Phú Quốc", destination: "Phú Quốc", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/4.jpg" },
-//             { name: "Khám phá Miền Tây", destination: "Miền Tây", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/5.jpg" },
-//             { name: "Đà Nẵng - Hà Nội - Ninh Bình", destination: "Đà Nẵng - Hà Nội - Ninh Bình", price: "Liên hệ để biết thêm", time: "3 Ngày 2 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/6.jpg" },
-//             { name: "Hà Nội - Hạ Long - Ninh Bình", destination: "Đà Nẵng - Hà Nội - Hạ Long - Ninh Bình - Đà Nẵng", price: "Liên hệ để biết thêm", time: "5 Ngày 4 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/7.jpg" },
-//             { name: "Hà Nội - Ninh Bình - Sapa - Hạ Long", destination: "Đà Nẵng - Hà Nội - Hạ Long - Ninh Bình - Đà Nẵng", price: "Liên hệ để biết thêm", time: "5 Ngày 4 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/8.jpg" },
+//             { id: 1,name: "Đà Nẵng - Nha Trang - Đà Lạt - Quy Nhơn", destination: "Đà Nẵng - Nha Trang - Đà Lạt - Quy Nhơn", price: "Liên hệ để biết thêm", time: "5 Ngày 4 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_TrongNuoc/1.jpg" },
+//             { id: 2,name: "Đà Nẵng - VQG Bạch Mã", destination: "Đà Nẵng - Vườn quốc gia Bạch Mã", price: "Liên hệ để biết thêm", time: "1 Ngày", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_TrongNuoc/2.jpg" },
+//             { id: 3, name: "Đà Nẵng - Mỹ Sơn - Hội An", destination: "Đà Nẵng - Mỹ Sơn - Hội An", price: "750.000 VNĐ", time: "1 Ngày", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_TrongNuoc/3.jpg" },
+//             { id: 4, name: "Thiên  đường nghỉ dưỡng Phú Quốc", destination: "Phú Quốc", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/4.jpg" },
+//             { id: 5, name: "Khám phá Miền Tây", destination: "Miền Tây", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/5.jpg" },
+//             { id: 6, name: "Đà Nẵng - Hà Nội - Ninh Bình", destination: "Đà Nẵng - Hà Nội - Ninh Bình", price: "Liên hệ để biết thêm", time: "3 Ngày 2 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/6.jpg" },
+//             { id: 7, name: "Hà Nội - Hạ Long - Ninh Bình", destination: "Đà Nẵng - Hà Nội - Hạ Long - Ninh Bình - Đà Nẵng", price: "Liên hệ để biết thêm", time: "5 Ngày 4 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/7.jpg" },
+//             { id: 8, name: "Hà Nội - Ninh Bình - Sapa - Hạ Long", destination: "Đà Nẵng - Hà Nội - Hạ Long - Ninh Bình - Đà Nẵng", price: "Liên hệ để biết thêm", time: "5 Ngày 4 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/8.jpg" },
 //             // { name: "Hà Nội - Ninh Bình - Sapa - Hạ Long", name: "Đà Nẵng - Hà Nội - Tràng An - Sapa - Hạ Long - Đà Nẵng", price: "Liên hệ để biết thêm", time: "6 Ngày 5 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/1.jpg" },
 
 
@@ -32,9 +32,9 @@
 //     {
 //         heading: "TOUR DU LỊCH QUỐC TẾ",
 //         tours: [
-//             { name: "Tour Trung Quốc", destination: "Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/1.jpg" },
-//             { name: "Tour Nhật Bản", destination: "Osaka - Nara - Kyoto - Núi Fuji - Tokio", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/2.jpg" },
-//             { name: "Tour Hàn Quốc", destination: "Seoul - Nami - Everland", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/3.jpg" },
+//             { id: 1, name: "Tour Trung Quốc", destination: "Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/1.jpg" },
+//             { id: 2, name: "Tour Nhật Bản", destination: "Osaka - Nara - Kyoto - Núi Fuji - Tokio", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/2.jpg" },
+//             { id: 3, name: "Tour Hàn Quốc", destination: "Seoul - Nami - Everland", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/3.jpg" },
 //         ]
 //     },
 //     {

@@ -24,6 +24,7 @@ html,body{
   overflow-x: hidden ;
 }
 /* css cho cac the html Header*/
+
 .Header__Main-Fixed{
   display: none;
   transition: 300ms ease-in-out 0s;
@@ -32,12 +33,33 @@ html,body{
   margin-right: 6px;
 
 }
-
 .Header_Top{
   
   align-items: center;
 }
-/* css chop Header Main */
+/* Header Main */
+
+/* css cho Header Main */
+/* Header  */
+#toggle-button-show{
+  display: none;
+}
+#toggle-button-close{
+  display: none;
+}
+#navbar-links{
+  display:flex;
+}
+#toggle-button-showhf{
+  display: none;
+}
+#toggle-button-closehf{
+  display: none;
+}
+#navbar-linkshf{
+  display:flex;
+}
+
 .Header__Main{
   background-color: rgba(225,235,241,0.5);
   height: 75px;
@@ -102,6 +124,7 @@ html,body{
   display: none;
 }
 /* Hover cho header main*/
+
 .Header__Main nav .menu li:hover >a{
   color: #fac624 !important;
 }
@@ -207,6 +230,85 @@ footer i{
 /* Mobile */
 
 @media only screen and (max-width: 480px) {
+  /* Responsive for Menu Header */
+  #toggle-button-show{
+    display: flex;
+  }
+  #toggle-button-close{
+    display: none;
+  }
+
+  #navbar-links{
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left:0;
+    display: none;
+    padding: 0;
+  }
+  #navbar-links ul{
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0;
+    justify-content: start;
+  }
+  #navbar-links li{
+    margin-bottom: 3px;
+    width: 100%;
+    justify-content: start;
+
+  }
+  #navbar-links ul li i, .submenu1,.submenu2,.submenu3{
+    visibility: hidden;
+  }
+  /*  */
+  /* header fixed */
+  #toggle-button-showhf{
+    display: flex;
+  }
+  #toggle-button-closehf{
+    display: none;
+  }
+
+  #navbar-linkshf{
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left:0;
+    display: none;
+    padding: 0;
+  }
+  #navbar-linkshf ul{
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0;
+    justify-content: start;
+  }
+  #navbar-linkshf li{
+    margin-bottom: 3px;
+    width: 100%;
+    justify-content: start;
+
+  }
+  #navbar-linkshf ul li i, .submenu1,.submenu2,.submenu3{
+    visibility: hidden;
+  }
+  /*  */
+  /* Header Top */
+  .Header__Top{
+    flex-direction: column;
+    align-items: center!important;
+  }
+  /*  */
+  .Menu_Header{
+    display: none;
+  }
   .Form_insign{
     width: 95%;
     margin-top: 10px ;
@@ -256,6 +358,77 @@ footer i{
 }
 /* tablet */
 @media all and (min-width: 481px) and  (max-width: 1024px ) {
+    /* Responsive for Menu Header */
+    #toggle-button-show{
+      display: flex;
+    }
+    #toggle-button-close{
+      display: none;
+    }
+  
+    #navbar-links{
+      flex-direction: column;
+      align-items: flex-start;
+      height: 100%;
+      position: absolute;
+      top: 100%;
+      left:0;
+      display: none;
+      padding: 0;
+    }
+    #navbar-links ul{
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 0;
+      justify-content: start;
+    }
+    #navbar-links li{
+      margin-bottom: 3px;
+      width: 100%;
+      justify-content: start;
+  
+    }
+    #navbar-links ul li i, .submenu1,.submenu2,.submenu3{
+      visibility: hidden;
+    }
+    /*  */
+
+    /* header fixed */
+    #toggle-button-showhf{
+      display: flex;
+    }
+    #toggle-button-closehf{
+      display: none;
+    }
+  
+    #navbar-linkshf{
+      flex-direction: column;
+      align-items: flex-start;
+      height: 100%;
+      position: absolute;
+      top: 100%;
+      left:0;
+      display: none;
+      padding: 0;
+    }
+    #navbar-linkshf ul{
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 0;
+      justify-content: start;
+    }
+    #navbar-linkshf li{
+      margin-bottom: 3px;
+      width: 100%;
+      justify-content: start;
+  
+    }
+    #navbar-linkshf ul li i, .submenu1,.submenu2,.submenu3{
+      visibility: hidden;
+    }
+  /*  */
   .Form_insign{
     width: 95% !important;
   }
@@ -301,6 +474,24 @@ footer i{
 }
 /* PC */
 @media all and ( min-width: 1025px) {
+  #toggle-button-show{
+    display: none !important;
+  }
+  #toggle-button-close{
+    display: none !important;
+  }
+  #navbar-links{
+    display: flex !important;
+  }
+  #toggle-button-showhf{
+    display: none !important;
+  }
+  #toggle-button-closehf{
+    display: none !important;
+  }
+  #navbar-linkshf{
+    display: flex !important;
+  }
   .Contact__Footer{
     padding-top: 10rem;
   }
