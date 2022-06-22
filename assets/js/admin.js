@@ -9,6 +9,8 @@ function addHeading(str) {
   }
 }
 
+console.log(tours[0]['tours'][0]['id'])
+
 addHeading('heading')
 addHeading('heading1')
 
@@ -48,6 +50,7 @@ heading.addEventListener('change', () => {
     let tr = document.createElement('tr')
     tr.innerHTML = `
         <td class="text-center">${i + 1}</td>
+        <td class="text-center">${tours[value]['tours'][i]['id']}</td>
         <td class="text-center">${tours[value]['tours'][i]['name']}</td>
         <td class="text-center">${tours[value]['tours'][i]['destination']}</td>
         <td class="text-center">${tours[value]['tours'][i]['price']}</td>
@@ -111,10 +114,32 @@ heading.addEventListener('change', () => {
                                                 </div>
         </td>
         <td class="text-center">
-            <button class="btn btn-danger" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModalToggle2"> Xóa <i class="bi bi-pen-fill"></i></button>
+            <button class="btn btn-danger" type="button" onclick="deleteTour(this)"> Xóa <i class="bi bi-pen-fill"></i></button>
         </td>
         `
     // console.log(tours[value].tours[i].name)
     tableBody.appendChild(tr)
   }
 })
+
+function deleteTour(row) {
+  var d = row.parentNode.parentNode.rowIndex - 1;
+  console.log(d)
+  let name = document.getElementById('tableBody').rows[d].cells[1].innerHTML
+  console.log(name)
+  document.getElementById('tableBody').deleteRow(d);
+  let txt = localStorage.getItem('tours')
+  tours = JSON.parse(txt)
+  // console.log(tours)
+  console.log(tours[document.getElementById('heading').value]['tours'])
+  let select = document.getElementById('heading').value
+  tours[select]['tours'] = tours[select]['tours'].filter((tour) => {
+      return tour.name != name
+  })
+  console.log(tours)
+  console.log(tours[document.getElementById('heading').value]['tours'])
+
+  // localStorage.setItem(JSON.stringify(tours, undefined, 4))
+  txt = JSON.stringify(tours, undefined, 4)
+  localStorage.setItem('tours', txt)
+}
