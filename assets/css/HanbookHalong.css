@@ -241,12 +241,17 @@ body {
 
 .Danhmuc-title{
     background-color: #FFCC00;
+    color: #fff;
 }
+
+
 
 .Danhmuc-list i{
     color: #FFCC00;
 }
-
+.Danhmuc-list li:hover{
+    color: #000;
+}
 .Newtour-title {
     background-color: #FFCC00;
     color: #fff;
