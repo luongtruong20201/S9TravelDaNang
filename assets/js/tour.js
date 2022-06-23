@@ -182,7 +182,7 @@ function getFullTours() {
 //Tours Quoc Te
 function getToursQT() {
     let tour = document.getElementById('content')
-    for (let i = 2; i < listOfTours.length - 1; i++) {
+    for (let i = 2; i < listOfTours.length; i++) {
         let container = document.createElement('div')
         container.className = 'container'
         let row = document.createElement('div')
@@ -311,7 +311,7 @@ function getToursQT() {
 // Tours Trong nuoc
 function getToursTN() {
     let tour = document.getElementById('content')
-    for (let i = 0; i < listOfTours.length - 2; i++) {
+    for (let i = 0; i < listOfTours.length - 1; i++) {
         let container = document.createElement('div')
         container.className = 'container'
         let row = document.createElement('div')
