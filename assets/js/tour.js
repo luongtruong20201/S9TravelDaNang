@@ -443,3 +443,24 @@ function getToursTN() {
         tour.appendChild(container)
     }
 }
+
+// localStorage.setItem('tours', JSON.stringify("", undefined, 4))
+
+function dangKy(){
+    let customerName = document.getElementById('customerName').value
+    let customerMail = document.getElementById('customerMail').value
+    let customer = JSON.parse(localStorage.getItem('customer'))
+    customer = [...customer, {name: customerName, email: customerMail}]
+    alert("Bạn đã đăng ký thành công")
+    localStorage.setItem('customer', JSON.stringify(customer, undefined, 4))
+}
+
+function saveRequest(){
+    let name = document.getElementById('inputName').value
+    let mail = document.getElementById('inputEmail').value
+    let requestText = document.getElementById('inputRequest').value
+    let request = JSON.parse(localStorage.getItem('request'))
+    request = [...request, {name: name, email: mail, request: requestText}]
+    alert("Bạn đã đăng ký thành công")
+    localStorage.setItem('request', JSON.stringify(request, undefined, 4))
+}

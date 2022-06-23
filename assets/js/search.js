@@ -26,12 +26,9 @@ function mySearch() {
 
 mySearch()
 let tours = JSON.parse(localStorage.getItem('tours'))
-console.log(tours)
 // console.log(search_tour)
 
 let text = JSON.parse(localStorage.getItem('searchText'))
-console.log(typeof text)
-console.log(text)
 
 function searchTour(text) {
     let search_tour = []
