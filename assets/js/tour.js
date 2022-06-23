@@ -44,30 +44,32 @@
 // localStorage.setItem('tours', txt)
 
 let customer = [
-    [
         {
-            "name": "Lương Quang Trường",
+            name: "Lương Quang Trường",
             "email": "luongtruong20201@gmail.com"
         },
         {
-            "name": "Phạm Gia Hưng",
-            "email": "hungpg@gmail.com"
+            name: "Phạm Gia Hưng",
+            email: "hungpg@gmail.com"
         },
         {
-            "name": "Nguyễn Quốc Tuấn",
-            "email": "truongluong20201@gmail.com"
+            name: "Nguyễn Quốc Tuấn",
+            email: "truongluong20201@gmail.com"
         },
         {
-            "name": "Lê Hữu Tính",
-            "email": "tinh196664@nuce.edu.vn"
-        },
-        {
-            "name": "Vux Trong dat",
-            "email": "adasda@gmail.co"
+            name: "Lê Hữu Tính",
+            email: "tinh196664@nuce.edu.vn"
         }
-    ]
 ]
-// let listOfTours = JSON.parse(localStorage.getItem('tours'))
+
+let request = [
+    {name: "Phạm Gia Hưng", email: "hungpg@gmail.com", request: 'Dịch vụ rất tốt'},
+    {name: "Vũ Trọng Đạt", email: "datvu@gmail.com", request: "^^"}
+]
+
+localStorage.setItem('request', JSON.stringify(request, undefined, 4))
+localStorage.setItem('customer', JSON.stringify(customer, undefined, 4))
+let listOfTours = JSON.parse(localStorage.getItem('tours'))
 
 function getFullTours() {
     let tour = document.getElementById('content')
