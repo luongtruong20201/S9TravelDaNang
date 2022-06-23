@@ -67,8 +67,8 @@
 //     {name: "Vũ Trọng Đạt", email: "datvu@gmail.com", request: "^^"}
 // ]
 
-localStorage.setItem('request', JSON.stringify(request, undefined, 4))
-localStorage.setItem('customer', JSON.stringify(customer, undefined, 4))
+// localStorage.setItem('request', JSON.stringify(request, undefined, 4))
+// localStorage.setItem('customer', JSON.stringify(customer, undefined, 4))
 let listOfTours = JSON.parse(localStorage.getItem('tours'))
 
 let customer = JSON.parse(localStorage.getItem('customer'))
