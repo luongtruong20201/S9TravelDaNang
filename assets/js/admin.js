@@ -1,7 +1,7 @@
 var tours = JSON.parse(localStorage.getItem('tours'))
 // console.log(tours)
 var request = JSON.parse(localStorage.getItem('request'))
-console.log(request)
+// console.log(request)
 
 function addHeading(str) {
   let heading = document.getElementById(str)
@@ -20,6 +20,12 @@ function nameOfFile(){
   return fileName.slice(txt.length, fileName.length)
 }
 
+function getID(str){
+  let index = document.getElementById(str).rows.length-1
+  let id = Number(document.getElementById(str).rows[index].cells[0].innerHTML) + 1
+  return id
+}
+
 function themTour(){
   let theloai = document.getElementById('heading1').value
   let tentour = document.getElementById('tentour').value
@@ -31,7 +37,8 @@ function themTour(){
   let link = ["assets/Img/Tours/Tour_DaNang/", "assets/Img/Tours/Tour_TrongNuoc/", "assets/Img/Tours/Tour_QuocTe/"]
   // console.log(anhtour)
   let diadiem = document.getElementById('diadiem').value
-  let tour = {name: tentour, destination: diadiem, price: giatien, time: thoigian, vehicle: phuongtien, img: link[theloai] + anhtour}
+  let id = getID('tableBody')
+  let tour = {id: id, name: tentour, destination: diadiem, price: giatien, time: thoigian, vehicle: phuongtien, img: link[theloai] + anhtour}
   // console.log(listOfTours, tour)
   let listOfTours = JSON.parse(localStorage.getItem('tours'))
   listOfTours[theloai].tours.push(tour)
@@ -122,11 +129,13 @@ heading.addEventListener('change', () => {
   }
 })
 
+
 function deleteTour(row) {
   var d = row.parentNode.parentNode.rowIndex - 1;
-  console.log(d)
-  let name = document.getElementById('tableBody').rows[d].cells[1].innerHTML
-  console.log(name)
+  // console.log(d)
+  let id = document.getElementById('tableBody').rows[d].cells[1].innerHTML
+  let a = document.getElementById('tableBody').rows.length
+  console.log(a)
   document.getElementById('tableBody').deleteRow(d);
   let txt = localStorage.getItem('tours')
   tours = JSON.parse(txt)
@@ -134,9 +143,9 @@ function deleteTour(row) {
   console.log(tours[document.getElementById('heading').value]['tours'])
   let select = document.getElementById('heading').value
   tours[select]['tours'] = tours[select]['tours'].filter((tour) => {
-      return tour.name != name
+      return tour.id != id
   })
-  console.log(tours)
+  // console.log(tours)
   console.log(tours[document.getElementById('heading').value]['tours'])
 
   // localStorage.setItem(JSON.stringify(tours, undefined, 4))
@@ -153,7 +162,7 @@ function getCustomerRequest(){
   }
 }
 
-getCustomerRequest()
+// getCustomerRequest()
 
 function getCustomer(){
   // let customer = JSON.parse(localStorage.getItem('customer'))
@@ -161,4 +170,4 @@ function getCustomer(){
   console.log(customer)
 }
 
-getCustomer()
+// getCustomer()
