@@ -37,14 +37,6 @@ listOfTours = [
             { id: 3, name: "Tour Hàn Quốc", destination: "Seoul - Nami - Everland", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/3.jpg" },
         ]
     },
-    {
-        heading: "CẨM NANG DU LỊCH",
-        tours: [
-            { name: "Tour Trung Quốc", destination: "Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/1.jpg" },
-            { name: "Tour Nhật Bản", destination: "Osaka - Nara - Kyoto - Núi Fuji - Tokio", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/2.jpg" },
-            { name: "Tour Hàn Quốc", destination: "Seoul - Nami - Everland", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/3.jpg" },
-        ]
-    }
 ]
 
 let txt = JSON.stringify(listOfTours, undefined, 4)
