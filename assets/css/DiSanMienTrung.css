@@ -160,6 +160,30 @@ body {
     color: #FFCC00;
 }
 
+/* css content */
+.main-content{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.about-btn{
+    width: 30%;
+
+}
+
+.support-title{
+    background-color: #FFCC00;
+    color: #fff;
+}
+
+.support-list i{
+    color: #FFCC00;
+}
+
+
 
 /* css cho footer */
 .Form_insign {
