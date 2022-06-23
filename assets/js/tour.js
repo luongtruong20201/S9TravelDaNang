@@ -205,7 +205,7 @@ function getToursQT() {
         row.className = 'row'
         for (let j = 0; j < listOfTours[i]['tours'].length; j++) {
             let col_3 = document.createElement('div')
-            col_3.className = 'col-3'
+            col_3.className = 'col-sm-12 col-xxl-3 col-lg-4 col-md-6'
             col_3.innerHTML =
                 `<div class="d-flex justify-content-between" >
         <!-- card -->
