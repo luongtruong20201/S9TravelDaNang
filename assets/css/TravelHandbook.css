@@ -36,6 +36,26 @@
   
   align-items: center;
   }
+
+/* Header  */
+#toggle-button-show{
+  display: none;
+}
+#toggle-button-close{
+  display: none;
+}
+#navbar-links{
+  display:flex;
+}
+#toggle-button-showhf{
+  display: none;
+}
+#toggle-button-closehf{
+  display: none;
+}
+#navbar-linkshf{
+  display:flex;
+}
   /* css cho Header Main */
   .Header__Main{
   background-color: rgba(225,235,241,0.5);
@@ -237,7 +257,7 @@
     margin-top: 10px;
   }
   
-  /* responsive */
+/* responsive */
 /* Mobile */
 
 @media only screen and (max-width: 480px) {

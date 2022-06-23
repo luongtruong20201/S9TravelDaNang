@@ -20,18 +20,14 @@
         nonce="TBJgPf9e"></script>
     </div>
     <!-- Header -->
-    <header class="container-fluid ps-0 pe-0">
+    <header class="container-fluid ps-0 pe-0 w-100">
         <div>
             <!-- Header Top -->
-            <ul class='Header__Top d-flex bg-warning text-white align-items-center ps-0'>
-                <li class="mx-2"><i class="bi bi-house-door-fill"></i>CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ DU LỊCH S9 ĐÀ
-                    NẴNG</li>
-                <li class="mx-2"><a href="mailto:s9traveldn@gmail.com" class="text-white"><i
-                            class="bi bi-envelope"></i>s9traveldn@gmail.com</a></li>
-                <li class="mx-2"><a href="tel: 0935 327 969 " class="text-white"><i
-                            class="bi bi-telephone-fill"></i>0935 327 969</a></li>
-                <li class="mx-2"><a href="tel: 0979 324 821" class="text-white"><i class="bi bi-telephone-fill"></i>0979
-                        324 821</a></li>
+            <ul class ='Header__Top d-flex bg-warning text-white align-items-center ps-0'>
+                <li class="mx-2"><i class="bi bi-house-door-fill"></i>CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ DU LỊCH S9 ĐÀ NẴNG</li>
+                <li class="mx-2"><a href="mailto:s9traveldn@gmail.com" class="text-white"><i class="bi bi-envelope"></i>s9traveldn@gmail.com</a></li>
+                <li class="mx-2"><a href="tel: 0935 327 969 " class="text-white"><i class="bi bi-telephone-fill"></i>0935 327 969</a></li>
+                <li class="mx-2"><a href="tel: 0979 324 821" class="text-white"><i class="bi bi-telephone-fill"></i>0979 324 821</a></li>
             </ul>
         </div>
         <!-- Header Main fixed -->
@@ -39,23 +35,31 @@
             <div class="Header__Main d-flex justify-content-between w-100 align-items-center bg-white">
                 <div class="h-100 ms-2 align-items-center d-flex">
                     <a href="index.html">
-                        <img src="/assets/Img/WebLogo/LogoB.png" class=" img__Logo" alt="" />
+                        <img src="/assets/Img/WebLogo/LogoB.png" class =" img__Logo"alt="" />
                     </a>
                 </div>
                 <div class="h-100">
-                    <nav class="possition-relative d-flex align-items-center h-100">
-                        <ul class='d-flex justify-content-between align-items-center me-2 menu h-100 '>
-                            <li><a class="index text-black p-10 text-warning" href="/#">Trang chủ</a></li>
-                            <li><a class="introduce text-black" href="introduce.html">Giới thiệu</a></li>
-                            <li><a class="text-black" href="/TourQuocTe.html">Tour quốc tế</a></li>
+                        <nav class="possition-relative d-flex align-items-center h-100">
+                            <a href="#" id = "toggle-button-showhf" onclick="ShowMenuHeaderhf()">
+                                <button class="btn fw-3">
+                                    <i class="btn bi bi-list fa-lg"></i><span>Menu</span>
+                                </button>
+                        </a>
+                        <a href="#" id = "toggle-button-closehf" onclick="CloseMenuHeaderhf()">
+                            <button class="btn fw-3">
+                                <i class="bi bi-x fa-lg"></i></i> <span >Menu</span>
+                            </button>
+                        </a>
+                        <ul class='Menu_Header justify-content-between align-items-center me-2 menu h-100 ' id = "navbar-linkshf">
+                            <li><a class = "index text-black p-10 text-warning" href="/#" style="color:#fac624!important ">Trang chủ</a></li>
+                            <li><a class = "introduce text-black" href="introduce.html">Giới thiệu</a></li>
+                            <li><a class = "text-black" href="/TourQuocTe.html">Tour quốc tế</a></li>
                             <li>
-                                <a class="text-black px-2" href="/TourTrongNuoc.html">Tour trong nước <i
-                                        class="bi bi-chevron-down"></i> </a>
-
+                                <a class = "text-black px-2" href="/TourTrongNuoc.html">Tour trong nước <i class="bi bi-chevron-down"></i> </a>
+                            
                                 <ul class="submenu1 position-absolute p-0 top-100 ">
-                                    <li><a href="TourMienBac.html">Tour miền bắc <i
-                                                class="bi bi-chevron-right position-absolute end-0"></i></a>
-
+                                    <li><a href="TourMienBac.html">Tour miền bắc <i class="bi bi-chevron-right position-absolute end-0"></i></a>
+                                    
                                         <ul class="submenu2 position-absolute">
                                             <li><a href="">Hà Nội</a></li>
                                             <li><a href="">Hải Phòng</a></li>
@@ -66,8 +70,7 @@
                                         </ul>
                                     </li>
                                     <li><a href="TourMienNam.html">Tour miền nam</a></li>
-                                    <li><a href="TourMienTrung.html">Tour miền trung<i
-                                                class="bi bi-chevron-right position-absolute end-0"></i></a>
+                                    <li><a href="TourMienTrung.html">Tour miền trung<i class="bi bi-chevron-right position-absolute end-0"></i></a>
                                         <ul class="submenu3 position-absolute">
                                             <li><a href="">Đà Nẵng</a></li>
                                             <li><a href="">Daily Tour</a></li>
@@ -79,30 +82,24 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="text-black" href="#" style="color:#fac624!important ">Cảm nang du lịch</a></li>
-                            <li><a class="text-black" href="introduce.html#contact-us">Liên hệ</a></li>
+                            <li><a class = "text-black" href="TravelHandbook.html">Cảm nang du lịch</a></li>
+                            <li><a class = "text-black" href="introduce.html#contact-us">Liên hệ</a></li>  
                             <!-- Tim kiem cua header fixed-->
-                            <li><a class="text-white" href="#">
-                                    <button class="input-group-text btn text-dark " id="Btn-Seach-hf"
-                                        onclick="ShowInputhf()">
-                                        <i class="bi bi-search"></i></li>
-                            </button>
+                            <li><a class = "text-white" href="#">
+                                <button class="input-group-text btn text-dark " id="Btn-Seach-hf" onclick="ShowInputhf()">
+                                    <i class="bi bi-search"></i></li>
+                                </button>
                             </a></li>
                         </ul>
                     </nav>
                 </div>
                 <!-- Thanh tim kiem -->
-                <div class="h-100 w-100 position-absolute" id="input_search-hf" style="display: none;">
+                <div class="h-100 w-100 position-absolute" id = "input_search-hf"style="display: none;">
                     <div class="row d-flex h-100 w-100 m-0">
-                        <form class="input-group search__tour--items bg-white  h-100 p-0 flex-grow-1"
-                            style="width: 95%;opacity: 0.9;" action="/search.html">
-                            <input type="text" class="form-control border-0 p-4 h-100 "
-                                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="search"
-                                style=" outline: 0; opacity:0.9; color:#fac624">
+                        <form class="input-group search__tour--items bg-white  h-100 p-0 flex-grow-1" style="width: 95%;opacity: 0.9;"action="/search.html">
+                            <input type="text" class="form-control border-0 p-4 h-100 " aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="search" style=" outline: 0; opacity:0.9; color:#fac624">
                         </form>
-                        <button class=" border-0 text-warning text-end bg-white p-4 " id="btn_close-hf"
-                            onclick="closeInputhf()" style="width:5%;opacity: 0.9; color:#fac624"><i
-                                class="bi bi-x-lg"></i></button>
+                        <button class=" border-0 text-warning text-end bg-white p-4 " id ="btn_close-hf" onclick = "closeInputhf()" style="width:5%;opacity: 0.9; color:#fac624"><i class="bi bi-x-lg"></i></button>
                     </div>
                 </div>
             </div>
@@ -114,25 +111,32 @@
             <!-- Header Main -->
             <div class="Header__Main d-flex justify-content-between w-100 align-items-center position-absolute">
                 <div class="h-100 ms-2 align-items-center d-flex">
-                    <a href="/index.html">
-                        <img src="assets/Img/WebLogo/LogoB.png" class=" img__Logo" alt="" />
+                    <a href="index.html">
+                        <img src="assets/Img/WebLogo/LogoB.png" class =" img__Logo"alt="" />
                     </a>
                 </div>
+                <!-- Menu Header -->
                 <div class="h-100">
                     <nav class="possition-relative d-flex align-items-center h-100">
-                        <ul class='d-flex justify-content-between align-items-center me-2 menu h-100 '>
-                            <li><a class="index text-white p-10" href="/#">Trang chủ</a></li>
-                            <li><a class="introduce text-white" href="#" >Giới thiệu</a>
-                            </li>
-                            <li><a class="text-white" href="/TourQuocTe.html">Tour quốc tế</a></li>
+                        <a href="#" id = "toggle-button-show" onclick="ShowMenuHeader()">
+                                <button class="btn fw-3">
+                                    <i class="btn bi bi-list fa-lg"></i><span>Menu</span>
+                                </button>
+                        </a>
+                        <a href="#" id = "toggle-button-close" onclick="CloseMenuHeader()">
+                            <button class="btn fw-3">
+                                <i class="bi bi-x fa-lg"></i></i> <span >Menu</span>
+                            </button>
+                        </a>
+                        <ul class=' Menu_Header justify-content-between align-items-center me-2 menu h-100 ' id = "navbar-links">
+                            <li><a class = "index text-white p-10 text-warning" href="/#" style="color:#fac624!important ">Trang chủ</a></li>
+                            <li><a class = "introduce text-white" href="introduce.html">Giới thiệu</a></li>
+                            <li><a class = "text-white" href="/TourQuocTe.html">Tour quốc tế</a></li>
                             <li>
-                                <a class="text-white px-2" href="/TourTrongNuoc.html">Tour trong nước <i
-                                        class="bi bi-chevron-down"></i> </a>
-
+                                <a class = "text-white" href="/TourTrongNuoc.html">Tour trong nước <i class="bi bi-chevron-down"></i> </a>
+                            
                                 <ul class="submenu1 position-absolute p-0 top-100 ">
-                                    <li><a href="TourMienBac.html">Tour miền bắc <i
-                                                class="bi bi-chevron-right position-absolute end-0"></i></a>
-
+                                    <li><a href="TourMienBac.html">Tour miền bắc <i class="bi bi-chevron-right position-absolute end-0"></i></a>
                                         <ul class="submenu2 position-absolute">
                                             <li><a href="">Hà Nội</a></li>
                                             <li><a href="">Hải Phòng</a></li>
@@ -143,8 +147,7 @@
                                         </ul>
                                     </li>
                                     <li><a href="TourMienNam.html">Tour miền nam</a></li>
-                                    <li><a href="TourMienTrung.html">Tour miền trung<i
-                                                class="bi bi-chevron-right position-absolute end-0"></i></a>
+                                    <li><a href="TourMienTrung.html">Tour miền trung<i class="bi bi-chevron-right position-absolute end-0"></i></a>
                                         <ul class="submenu3 position-absolute">
                                             <li><a href="">Đà Nẵng</a></li>
                                             <li><a href="">Daily Tour</a></li>
@@ -154,32 +157,27 @@
                                             <li><a href="">Bắc Trung Bộ</a></li>
                                         </ul>
                                     </li>
-                                </ul>
+                                </ul> 
                             </li>
-                            <li><a class="text-white" href="/#" style="color:#fac624!important ">Cảm nang du lịch</a></li>
-                            <li><a class="text-white" href="introduce.html#contact-us">Liên hệ</a></li>
+                            <li><a class = "text-white" href="TravelHandbook.html">Cảm nang du lịch</a></li>
+                            <li><a class = "text-white" href="introduce.html#contact-us">Liên hệ</a></li>  
                             <!-- Tim kiem -->
-                            <li><a class="text-white" href="#">
-                                    <button class="input-group-text btn text-white " id="Btn-Seach"
-                                        onclick="ShowInput()">
-                                        <i class="bi bi-search"></i></li>
-                            </button>
+                            <li><a class = "text-white" href="#">
+                                <button class="input-group-text btn text-white " id="Btn-Seach" onclick="ShowInput()">
+                                    <i class="bi bi-search"></i></li>
+                                </button>
                             </a></li>
                         </ul>
                     </nav>
                 </div>
+                
                 <!-- Thanh tim kiem -->
-                <div class="h-100 w-100 position-absolute" id="input_search" style="display: none;">
+                <div class="h-100 w-100 position-absolute" id = "input_search"style="display: none;">
                     <div class="row d-flex h-100 w-100 m-0">
-                        <form class="input-group search__tour--items bg-white  h-100 p-0 flex-grow-1"
-                            style="width: 95%;opacity: 0.9;" action="/search.html">
-                            <input type="text" class="form-control border-0 p-4 h-100 "
-                                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="search"
-                                style=" outline: 0; opacity:0.9; color:#fac624">
+                        <form class="input-group search__tour--items bg-white  h-100 p-0 flex-grow-1" style="width: 95%;opacity: 0.9;"action="/search.html">
+                            <input type="text" class="form-control border-0 p-4 h-100 " aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="search" style=" outline: 0; opacity:0.9; color:#fac624">
                         </form>
-                        <button class=" border-0 text-warning text-end bg-white p-4 " id="btn_close"
-                            onclick="closeInput()" style="width:5%;opacity: 0.9; color:#fac624"><i
-                                class="bi bi-x-lg"></i></button>
+                        <button class=" border-0 text-warning text-end bg-white p-4 " id ="btn_close" onclick = "closeInput()" style="width:5%;opacity: 0.9; color:#fac624"><i class="bi bi-x-lg"></i></button>
                     </div>
                 </div>
             </div>
@@ -471,4 +469,6 @@
 
     </footer>
     <script src="/assets/js/Fixed__Header.js"></script>
+    <script src="/assets/js/search.js"></script>
+    <script src="/assets/js/Header.js"></script>
 </body>
