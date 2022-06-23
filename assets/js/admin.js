@@ -1,5 +1,7 @@
 var tours = JSON.parse(localStorage.getItem('tours'))
-console.log(tours)
+// console.log(tours)
+var request = JSON.parse(localStorage.getItem('request'))
+console.log(request)
 
 function addHeading(str) {
   let heading = document.getElementById(str)
@@ -8,8 +10,6 @@ function addHeading(str) {
     heading.innerHTML += `<option value=${i}>${tours[i].heading}</option>`
   }
 }
-
-console.log(tours[0]['tours'][0]['id'])
 
 addHeading('heading')
 addHeading('heading1')
@@ -143,3 +143,22 @@ function deleteTour(row) {
   txt = JSON.stringify(tours, undefined, 4)
   localStorage.setItem('tours', txt)
 }
+
+function getCustomerRequest(){
+  let tableBody = document.getElementById('tableBodyRequest')
+  for(let i = 0; i<request.length; i++){
+    tr = document.createElement('tr')
+    tr.innerHTML = `Hi`
+    tableBody.appendChild(tr)
+  }
+}
+
+getCustomerRequest()
+
+function getCustomer(){
+  // let customer = JSON.parse(localStorage.getItem('customer'))
+  let customer = JSON.parse(localStorage.getItem('customer'))
+  console.log(customer)
+}
+
+getCustomer()
