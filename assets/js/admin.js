@@ -1,6 +1,7 @@
 var tours = JSON.parse(localStorage.getItem('tours'))
 // console.log(tours)
 var request = JSON.parse(localStorage.getItem('request'))
+var customer = JSON.parse(localStorage.getItem('customer'))
 // console.log(request)
 
 function addHeading(str) {
@@ -157,7 +158,12 @@ function getCustomerRequest(){
   let tableBody = document.getElementById('tableBodyRequest')
   for(let i = 0; i<request.length; i++){
     tr = document.createElement('tr')
-    tr.innerHTML = `Hi`
+    tr.innerHTML = `
+      <td class="text-center">${i+1}</td>
+      <td class="text-center">${request[i].name}</td>
+      <td class="text-center">${request[i].email}</td>
+      <td class="text-center">${request[i].request}</td>
+    `
     tableBody.appendChild(tr)
   }
 }
@@ -167,7 +173,17 @@ function getCustomerRequest(){
 function getCustomer(){
   // let customer = JSON.parse(localStorage.getItem('customer'))
   let customer = JSON.parse(localStorage.getItem('customer'))
-  console.log(customer)
+  // console.log(customer)
+  for(let i = 0; i<customer.length; i++){
+    let tr = document.createElement('tr')
+    tr.innerHTML = `
+      <td class="text-center">${i+1}</td>
+      <td class="text-center">${customer[i].name}</td>
+      <td class="text-center">${customer[i].email}</td>
+    `
+    let tableBody = document.getElementById('thongtin')
+    tableBody.appendChild(tr)
+  }
 }
 
 // getCustomer()
