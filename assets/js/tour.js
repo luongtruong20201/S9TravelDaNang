@@ -42,7 +42,6 @@
 // let txt = JSON.stringify(listOfTours, undefined, 4)
 // localStorage.setItem('tours', txt)
 
-<<<<<<< HEAD
 let listOfTours = JSON.parse(localStorage.getItem('tours'))
 
 // let customer = [
@@ -62,40 +61,6 @@ let listOfTours = JSON.parse(localStorage.getItem('tours'))
 
 let customer = JSON.parse(localStorage.getItem('customer'))
 let request = JSON.parse(localStorage.getItem('request'))
-=======
-// let customer = [
-//         {
-//             name: "Lương Quang Trường",
-//             "email": "luongtruong20201@gmail.com"
-//         },
-//         {
-//             name: "Phạm Gia Hưng",
-//             email: "hungpg@gmail.com"
-//         },
-//         {
-//             name: "Nguyễn Quốc Tuấn",
-//             email: "truongluong20201@gmail.com"
-//         },
-//         {
-//             name: "Lê Hữu Tính",
-//             email: "tinh196664@nuce.edu.vn"
-//         }
-// ]
-
-// let request = [
-//     {name: "Phạm Gia Hưng", email: "hungpg@gmail.com", request: 'Dịch vụ rất tốt'},
-//     {name: "Vũ Trọng Đạt", email: "datvu@gmail.com", request: "^^"}
-// ]
-
-// localStorage.setItem('request', JSON.stringify(request, undefined, 4))
-// localStorage.setItem('customer', JSON.stringify(customer, undefined, 4))
-let listOfTours = JSON.parse(localStorage.getItem('tours'))
-
-let customer = JSON.parse(localStorage.getItem('customer'))
-
-let request = JSON.parse(localStorage.getItem('request'))
-
->>>>>>> luongtruong20201
 function getFullTours() {
     let tour = document.getElementById('content')
     for (let i = 0; i < listOfTours.length; i++) {
