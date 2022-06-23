@@ -1,141 +1,141 @@
 /* reset css */
 *{
-    margin: 0;
-    padding: 0;
-    
+  margin: 0;
+  padding: 0;
+  
 }
 /* css cho the html */
 a{
-    text-decoration: none;
+  text-decoration: none;
 
 }
 ul{
-  list-style: none;
-  margin:0px;
+list-style: none;
+margin:0px;
 }
 
 hr {
-  border: 0;
-  clear:both;
-  display:block;
-  height: 1px;
+border: 0;
+clear:both;
+display:block;
+height: 1px;
 }
 html,body{
-  overflow-x: hidden ;
+overflow-x: hidden ;
 }
 /* css cho cac the html Header*/
 
 .Header__Main-Fixed{
-  display: none;
-  transition: 300ms ease-in-out 0s;
+display: none;
+transition: 300ms ease-in-out 0s;
 }
 .Header__Top i{
-  margin-right: 6px;
+margin-right: 6px;
 
 }
 .Header_Top{
-  
-  align-items: center;
+
+align-items: center;
 }
 /* Header Main */
 
 /* css cho Header Main */
 /* Header  */
 #toggle-button-show{
-  display: none;
+display: none;
 }
 #toggle-button-close{
-  display: none;
+display: none;
 }
 #navbar-links{
-  display:flex;
+display:flex;
 }
 #toggle-button-showhf{
-  display: none;
+display: none;
 }
 #toggle-button-closehf{
-  display: none;
+display: none;
 }
 #navbar-linkshf{
-  display:flex;
+display:flex;
 }
 
 .Header__Main{
-  background-color: rgba(225,235,241,0.5);
-  height: 75px;
-  align-items: center;
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-  position: absolute; 
-  width: 100%;
+background-color: rgba(225,235,241,0.5);
+height: 75px;
+align-items: center;
+display: flex;
+margin: 0 auto;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+position: absolute; 
+width: 100%;
 }
 .Header__Main nav ul{
-  font-size: 1rem;
+font-size: 1rem;
 }
 .Header__Main nav .menu li{
-  padding:0px 10px;
-  font-weight: 500;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  align-items: center;
+padding:0px 10px;
+font-weight: 500;
+text-transform: uppercase;
+display: flex;
+justify-content: space-between;
+height: 100%;
+align-items: center;
 }
 .Header__Main ul li{
-  margin-right: 8px;
-  margin-left: 8px;
+margin-right: 8px;
+margin-left: 8px;
 }
 .Header__Main nav .submenu1{
-  background-color:  #fff;
-  color: #000;
-  width: 215px;
-  display: none;
+background-color:  #fff;
+color: #000;
+width: 215px;
+display: none;
 }
 .Header__Main nav .submenu1 li {
-  padding: 10px 5px 10px 10px;
-  margin-right: 0px;
-  margin-left: 0px;
+padding: 10px 5px 10px 10px;
+margin-right: 0px;
+margin-left: 0px;
 }
 
 .Header__Main nav .submenu1 li a{
-  color: #000;
-  margin:0px;
-  font-size:medium;
+color: #000;
+margin:0px;
+font-size:medium;
 }
 .Header__Main .submenu1 .submenu2{
-  left: 100%;
-  width: 100%;
-  top:0;
-  background-color: #fff;
-  text-align: start;
-  padding: 0;
-  display: none;
+left: 100%;
+width: 100%;
+top:0;
+background-color: #fff;
+text-align: start;
+padding: 0;
+display: none;
 } 
 .Header__Main .submenu1 .submenu3{
-  left: 100%;
-  width: 100%;
-  top:87px;
-  background-color: #fff;
-  text-align: start;
-  padding: 0;
-  display: none;
+left: 100%;
+width: 100%;
+top:87px;
+background-color: #fff;
+text-align: start;
+padding: 0;
+display: none;
 }
 /* Hover cho header main*/
 
 .Header__Main nav .menu li:hover >a{
-  color: #fac624 !important;
+color: #fac624 !important;
 }
 .Header__Main .menu>li:hover> .submenu1{
-  display: block;
+display: block;
 }
 .Header__Main .submenu1>li:hover> .submenu2{
-  display: block;
+display: block;
 }
 .Header__Main .submenu1>li:hover> .submenu3{
-  display: block;
+display: block;
 }
 
 
@@ -143,93 +143,221 @@ html,body{
 
 /*  */
 .img__Logo{
-    height: 50px;
-    width: auto;
+  height: 50px;
+  width: auto;
 }
 .img__Slider{
-  height: 450px;
-  
+height: 450px;
+
 }
 
 .carousel-item{
-  height: 25rem;
-  color:white;
-  background: #777;
-  position: relative;
-  background-position: center;
-  background-size:cover;
+height: 25rem;
+color:white;
+background: #777;
+position: relative;
+background-position: center;
+background-size:cover;
 }
 /* css cho body */
 .card{
-  transition: all .5s;
+transition: all .5s;
 }
 .card:hover{
-  box-shadow:  0px 0px 10px 2px rgb(0 0 0 / 80%);
-  transform: translateY(-5px);
+box-shadow:  0px 0px 10px 2px rgb(0 0 0 / 80%);
+transform: translateY(-5px);
 }
 .search__tour{
-  margin: -25px 0px 0px 0px;
+margin: -25px 0px 0px 0px;
 }
 .search__tour form{
-  border-style: solid;
-  border-color: #C4C4C4;
-  border-radius: 5px 5px 5px 5px;
+border-style: solid;
+border-color: #C4C4C4;
+border-radius: 5px 5px 5px 5px;
 
 }
 /* css cho footer */
 .Form_insign{
-  width:75%;
-  border-radius: 10px;
+width:75%;
+border-radius: 10px;
 }
 .Contact__Footer{
-  padding-top:100px
+padding-top:100px
 }
 footer a span{
-  color: #000;
+color: #000;
 }
 footer i{
-  color: #FAC624;
-  padding-right: 2px;
+color: #FAC624;
+padding-right: 2px;
 }
 /* fixed contact */
 .Contact__fixed{
-  position: fixed;
-  left: auto;
-  right: 0;
-  bottom: 50px;
-  z-index: 999;
-  border-right: 0;
-  width: 70px;
-  background-color: #fff;
-  padding: 10px 15px 10px 5px;
-  box-sizing: border-box;
+position: fixed;
+left: auto;
+right: 0;
+bottom: 50px;
+z-index: 999;
+border-right: 0;
+width: 70px;
+background-color: #fff;
+padding: 10px 15px 10px 5px;
+box-sizing: border-box;
 
 }
 .Contact__fixed div{
-  margin-bottom: 5px;
-  border: 0;
+margin-bottom: 5px;
+border: 0;
 }
 .Contact__fixed img{
-  width: 45px;
-  margin: auto;
-  margin-bottom: -10px;
-  border-radius: 100%;
-  background-color: white;
-  padding: 5px;
-  border: 1px solid #cdcdcd;
+width: 45px;
+margin: auto;
+margin-bottom: -10px;
+border-radius: 100%;
+background-color: white;
+padding: 5px;
+border: 1px solid #cdcdcd;
 }
 .Contact__fixed span{
-  font-size: smaller;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  margin-top: 10px;
+font-size: smaller;
+display: inline-block;
+width: 100%;
+text-align: center;
+margin-top: 10px;
 }
 
 /* responsive */
 /* Mobile */
 
 @media only screen and (max-width: 480px) {
+/* Responsive for Menu Header */
+#toggle-button-show{
+  display: flex;
+}
+#toggle-button-close{
+  display: none;
+}
+
+#navbar-links{
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left:0;
+  display: none;
+  padding: 0;
+}
+#navbar-links ul{
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0;
+  justify-content: start;
+}
+#navbar-links li{
+  margin-bottom: 3px;
+  width: 100%;
+  justify-content: start;
+
+}
+#navbar-links ul li i, .submenu1,.submenu2,.submenu3{
+  visibility: hidden;
+}
+/*  */
+/* header fixed */
+#toggle-button-showhf{
+  display: flex;
+}
+#toggle-button-closehf{
+  display: none;
+}
+
+#navbar-linkshf{
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left:0;
+  display: none;
+  padding: 0;
+}
+#navbar-linkshf ul{
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0;
+  justify-content: start;
+}
+#navbar-linkshf li{
+  margin-bottom: 3px;
+  width: 100%;
+  justify-content: start;
+
+}
+#navbar-linkshf ul li i, .submenu1,.submenu2,.submenu3{
+  visibility: hidden;
+}
+/*  */
+/* Header Top */
+.Header__Top{
+  flex-direction: column;
+  align-items: center!important;
+}
+/*  */
+.Menu_Header{
+  display: none;
+}
+.Form_insign{
+  width: 95%;
+  margin-top: 10px ;
+}
+footer{
+  margin-top: 12rem;
+}
+.Contact__Footer{
+  padding-top: 12rem!important;
+}
+/* Responsive for Contact fixed */
+.Contact__fixed{
+  position: fixed;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 0px;
+  justify-content: space-between;
+}
+.Contact__fixed div{
+  width: 19%;
+  display: block;
+}
+.Contact__fixed div a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Contact__fixed div a img{
+  margin-top: -20px;
+  margin-bottom: 0;
+  /* width: 45px; */
+  max-width: 55px !important;
+}
+.Contact__fixed div a .img__Call{
+  width: 80px !important;
+  margin-top: -40px !important;
+  max-width: 80% !important;
+  background-color: #138311;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+}
+/* tablet */
+@media all and (min-width: 481px) and  (max-width: 1024px ) {
   /* Responsive for Menu Header */
   #toggle-button-show{
     display: flex;
@@ -265,6 +393,7 @@ footer i{
     visibility: hidden;
   }
   /*  */
+
   /* header fixed */
   #toggle-button-showhf{
     display: flex;
@@ -299,26 +428,13 @@ footer i{
   #navbar-linkshf ul li i, .submenu1,.submenu2,.submenu3{
     visibility: hidden;
   }
-  /*  */
-  /* Header Top */
-  .Header__Top{
-    flex-direction: column;
-    align-items: center!important;
-  }
-  /*  */
-  .Menu_Header{
-    display: none;
-  }
-  .Form_insign{
-    width: 95%;
-    margin-top: 10px ;
-  }
-  footer{
-    margin-top: 12rem;
-  }
-  .Contact__Footer{
-    padding-top: 12rem!important;
-  }
+/*  */
+.Form_insign{
+  width: 95% !important;
+}
+.Contact__Footer{
+  padding-top: 10rem!important;
+}
   /* Responsive for Contact fixed */
   .Contact__fixed{
     position: fixed;
@@ -356,146 +472,30 @@ footer i{
   }
 
 }
-/* tablet */
-@media all and (min-width: 481px) and  (max-width: 1024px ) {
-    /* Responsive for Menu Header */
-    #toggle-button-show{
-      display: flex;
-    }
-    #toggle-button-close{
-      display: none;
-    }
-  
-    #navbar-links{
-      flex-direction: column;
-      align-items: flex-start;
-      height: 100%;
-      position: absolute;
-      top: 100%;
-      left:0;
-      display: none;
-      padding: 0;
-    }
-    #navbar-links ul{
-      width: 100%;
-      flex-direction: column;
-      align-items: flex-end;
-      padding: 0;
-      justify-content: start;
-    }
-    #navbar-links li{
-      margin-bottom: 3px;
-      width: 100%;
-      justify-content: start;
-  
-    }
-    #navbar-links ul li i, .submenu1,.submenu2,.submenu3{
-      visibility: hidden;
-    }
-    /*  */
-
-    /* header fixed */
-    #toggle-button-showhf{
-      display: flex;
-    }
-    #toggle-button-closehf{
-      display: none;
-    }
-  
-    #navbar-linkshf{
-      flex-direction: column;
-      align-items: flex-start;
-      height: 100%;
-      position: absolute;
-      top: 100%;
-      left:0;
-      display: none;
-      padding: 0;
-    }
-    #navbar-linkshf ul{
-      width: 100%;
-      flex-direction: column;
-      align-items: flex-end;
-      padding: 0;
-      justify-content: start;
-    }
-    #navbar-linkshf li{
-      margin-bottom: 3px;
-      width: 100%;
-      justify-content: start;
-  
-    }
-    #navbar-linkshf ul li i, .submenu1,.submenu2,.submenu3{
-      visibility: hidden;
-    }
-  /*  */
-  .Form_insign{
-    width: 95% !important;
-  }
-  .Contact__Footer{
-    padding-top: 10rem!important;
-  }
-    /* Responsive for Contact fixed */
-    .Contact__fixed{
-      position: fixed;
-      display: flex;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: #fff;
-      padding: 0px;
-      justify-content: space-between;
-    }
-    .Contact__fixed div{
-      width: 19%;
-      display: block;
-    }
-    .Contact__fixed div a{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .Contact__fixed div a img{
-      margin-top: -20px;
-      margin-bottom: 0;
-      /* width: 45px; */
-      max-width: 55px !important;
-    }
-    .Contact__fixed div a .img__Call{
-      width: 80px !important;
-      margin-top: -40px !important;
-      max-width: 80% !important;
-      background-color: #138311;
-      padding: 15px;
-      box-sizing: border-box;
-    }
-
-}
 /* PC */
 @media all and ( min-width: 1025px) {
-  #toggle-button-show{
-    display: none !important;
-  }
-  #toggle-button-close{
-    display: none !important;
-  }
-  #navbar-links{
-    display: flex !important;
-  }
-  #toggle-button-showhf{
-    display: none !important;
-  }
-  #toggle-button-closehf{
-    display: none !important;
-  }
-  #navbar-linkshf{
-    display: flex !important;
-  }
-  .Contact__Footer{
-    padding-top: 10rem;
-  }
-  footer{
-    margin-top: 10rem;
-  }
+#toggle-button-show{
+  display: none !important;
+}
+#toggle-button-close{
+  display: none !important;
+}
+#navbar-links{
+  display: flex !important;
+}
+#toggle-button-showhf{
+  display: none !important;
+}
+#toggle-button-closehf{
+  display: none !important;
+}
+#navbar-linkshf{
+  display: flex !important;
+}
+.Contact__Footer{
+  padding-top: 10rem;
+}
+footer{
+  margin-top: 10rem;
+}
 }
