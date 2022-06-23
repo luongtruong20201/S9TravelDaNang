@@ -172,33 +172,19 @@ function getCustomerRequest(){
   }
 }
 
-<<<<<<< HEAD
-=======
-// getCustomerRequest()
->>>>>>> luongtruong20201
 
 function getCustomer(){
   // let customer = JSON.parse(localStorage.getItem('customer'))
   let customer = JSON.parse(localStorage.getItem('customer'))
-<<<<<<< HEAD
   console.log(customer)
   let tableBody = document.getElementById('tableBodyKM')
   for(let i = 0; i<customer.length; i++){
     tr = document.createElement('tr')
-=======
-  // console.log(customer)
-  for(let i = 0; i<customer.length; i++){
-    let tr = document.createElement('tr')
->>>>>>> luongtruong20201
     tr.innerHTML = `
       <td class="text-center">${i+1}</td>
       <td class="text-center">${customer[i].name}</td>
       <td class="text-center">${customer[i].email}</td>
     `
-<<<<<<< HEAD
-=======
-    let tableBody = document.getElementById('thongtin')
->>>>>>> luongtruong20201
     tableBody.appendChild(tr)
   }
 }
