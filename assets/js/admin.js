@@ -1,6 +1,7 @@
 var tours = JSON.parse(localStorage.getItem('tours'))
 // console.log(tours)
 
+var vehicle = ['Xe máy', 'Ô tô', 'Tàu', 'Máy Bay']
 
 var request = JSON.parse(localStorage.getItem('request'))
 var customer = JSON.parse(localStorage.getItem('customer'))
@@ -25,7 +26,7 @@ function nameOfFile(){
 
 function getID(str){
   let index = document.getElementById(str).rows.length-1
-  let id = Number(document.getElementById(str).rows[index].cells[0].innerHTML) + 1
+  let id = Number(document.getElementById(str).rows[index].cells[1].innerHTML) + 1
   return id
 }
 
@@ -34,7 +35,11 @@ function themTour(){
   let tentour = document.getElementById('tentour').value
   let giatien = document.getElementById('giatien').value
   let thoigian = document.getElementById('date').value
-  let phuongtien = document.getElementById('phuongtien').value
+  if(giatien === '')
+    giatien = "Liên hệ để biết thêm"
+  if(thoigian === '')
+    thoigian = "Liên hệ để biết thêm"
+  let phuongtien = vehicle[document.getElementById('phuongtien').value]
   // let anhtour = document.getElementById('anhtour').value
   let anhtour = nameOfFile()
   let link = ["assets/Img/Tours/Tour_DaNang/", "assets/Img/Tours/Tour_TrongNuoc/", "assets/Img/Tours/Tour_QuocTe/"]

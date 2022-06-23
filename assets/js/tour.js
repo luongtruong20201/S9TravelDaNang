@@ -468,6 +468,7 @@ function saveRequest(){
     let mail = document.getElementById('inputEmail').value
     let requestText = document.getElementById('inputRequest').value
     let request = JSON.parse(localStorage.getItem('request'))
+    console.log(name, mail, request)
     request = [...request, {name: name, email: mail, request: requestText}]
     alert("Bạn đã đăng ký thành công")
     localStorage.setItem('request', JSON.stringify(request, undefined, 4))
