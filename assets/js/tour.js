@@ -43,33 +43,37 @@
 // console.log(txt)
 // localStorage.setItem('tours', txt)
 
-let customer = [
-        {
-            name: "Lương Quang Trường",
-            "email": "luongtruong20201@gmail.com"
-        },
-        {
-            name: "Phạm Gia Hưng",
-            email: "hungpg@gmail.com"
-        },
-        {
-            name: "Nguyễn Quốc Tuấn",
-            email: "truongluong20201@gmail.com"
-        },
-        {
-            name: "Lê Hữu Tính",
-            email: "tinh196664@nuce.edu.vn"
-        }
-]
+// let customer = [
+//         {
+//             name: "Lương Quang Trường",
+//             "email": "luongtruong20201@gmail.com"
+//         },
+//         {
+//             name: "Phạm Gia Hưng",
+//             email: "hungpg@gmail.com"
+//         },
+//         {
+//             name: "Nguyễn Quốc Tuấn",
+//             email: "truongluong20201@gmail.com"
+//         },
+//         {
+//             name: "Lê Hữu Tính",
+//             email: "tinh196664@nuce.edu.vn"
+//         }
+// ]
 
-let request = [
-    {name: "Phạm Gia Hưng", email: "hungpg@gmail.com", request: 'Dịch vụ rất tốt'},
-    {name: "Vũ Trọng Đạt", email: "datvu@gmail.com", request: "^^"}
-]
+// let request = [
+//     {name: "Phạm Gia Hưng", email: "hungpg@gmail.com", request: 'Dịch vụ rất tốt'},
+//     {name: "Vũ Trọng Đạt", email: "datvu@gmail.com", request: "^^"}
+// ]
 
 localStorage.setItem('request', JSON.stringify(request, undefined, 4))
 localStorage.setItem('customer', JSON.stringify(customer, undefined, 4))
 let listOfTours = JSON.parse(localStorage.getItem('tours'))
+
+let customer = JSON.parse(localStorage.getItem('customer'))
+
+let request = JSON.parse(localStorage.getItem('request'))
 
 function getFullTours() {
     let tour = document.getElementById('content')
@@ -478,6 +482,7 @@ function saveRequest(){
     let mail = document.getElementById('inputEmail').value
     let requestText = document.getElementById('inputRequest').value
     let request = JSON.parse(localStorage.getItem('request'))
+    console.log(name, mail, request)
     request = [...request, {name: name, email: mail, request: requestText}]
     alert("Bạn đã đăng ký thành công")
     localStorage.setItem('request', JSON.stringify(request, undefined, 4))
