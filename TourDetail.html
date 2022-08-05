@@ -1,34 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!-- css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="assets/css/TourQuocTe.css">
     <!-- icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="/assets/Img/WebLogo/logo.png"/>
     <title>S9 Travel Đà Nẵng - Lữ hành S9 Đà Nẵng</title>
-    <style>
-        .changeColor{
-            background-color: aqua;
-        }
-    </style>
 </head>
-<body >
+
+<body>
     <!-- Trang facebook -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0" nonce="TBJgPf9e"></script>
     </div>
     <!--  -->
-    
-    <header class="container-fluid ps-0 pe-0 w-100">
+    <header class="container-fluid ps-0 pe-0">
         <div>
             <!-- Header Top -->
             <ul class ='Header__Top d-flex bg-warning text-white align-items-center ps-0'>
@@ -59,14 +52,14 @@
                             </button>
                         </a>
                         <ul class='Menu_Header justify-content-between align-items-center me-2 menu h-100 ' id = "navbar-linkshf">
-                            <li><a class = "index text-black p-10 text-warning" href="/#" style="color:#fac624!important ">Trang chủ</a></li>
-                            <li><a class = "introduce text-black" href="introduce.html">Giới thiệu</a></li>
-                            <li><a class = "text-black" href="/TourQuocTe.html">Tour quốc tế</a></li>
+                            <li><a class = "index text-black p-10 text-warning" href="/#" >Trang chủ</a></li>
+                            <li><a class = "introduce text-black" href="introduce.html ">Giới thiệu</a></li>
+                            <li><a class = "text-black" href="/TourQuocTe.html"style="color:#fac624!important ">Tour quốc tế</a></li>
                             <li>
                                 <a class = "text-black px-2" href="/TourTrongNuoc.html">Tour trong nước <i class="bi bi-chevron-down"></i> </a>
                             
                                 <ul class="submenu1 position-absolute p-0 top-100 ">
-                                    <li><a href="TourMienBac.html">Tour miền bắc <i class="bi bi-chevron-right position-absolute end-0"></i></a>
+                                    <li><a href="TourMienBac.html" >Tour miền bắc <i class="bi bi-chevron-right position-absolute end-0"></i></a>
                                     
                                         <ul class="submenu2 position-absolute">
                                             <li><a href="">Hà Nội</a></li>
@@ -90,7 +83,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class = "text-black" href="TravelHandbook.html">Cẩm nang du lịch</a></li>
+                            <li><a class = "text-black" href="/TravelHandbook.html">Cẩm nang du lịch</a></li>
                             <li><a class = "text-black" href="introduce.html#contact-us">Liên hệ</a></li>  
                             <!-- Tim kiem cua header fixed-->
                             <li><a class = "text-white" href="#">
@@ -114,135 +107,104 @@
         </div>
     </header>
     
-    <main class="position-relative mb-5">
-        
+    <main class="position-relative ">
         <div class="slider container-fluid ps-0 pe-0 ">
             <!-- Header Main -->
-                <div class="Header__Main d-flex justify-content-between w-100 align-items-center position-absolute">
-                    <div class="h-100 ms-2 align-items-center d-flex">
-                        <a href="index.html">
-                            <img src="assets/Img/WebLogo/LogoB.png" class =" img__Logo"alt="" />
-                        </a>
-                    </div>
-                    <!-- Menu Header -->
-                    <div class="h-100">
-                        <nav class="possition-relative d-flex align-items-center h-100">
-                            <a href="#" id = "toggle-button-show" onclick="ShowMenuHeader()">
-                                    <button class="btn fw-3">
-                                        <i class="btn bi bi-list fa-lg"></i><span>Menu</span>
-                                    </button>
-                            </a>
-                            <a href="#" id = "toggle-button-close" onclick="CloseMenuHeader()">
+            <div class="Header__Main d-flex justify-content-between w-100 align-items-center position-absolute">
+                <div class="h-100 ms-2 align-items-center d-flex">
+                    <a href="index.html">
+                        <img src="assets/Img/WebLogo/LogoB.png" class =" img__Logo"alt="" />
+                    </a>
+                </div>
+                <!-- Menu Header -->
+                <div class="h-100">
+                    <nav class="possition-relative d-flex align-items-center h-100">
+                        <a href="#" id = "toggle-button-show" onclick="ShowMenuHeader()">
                                 <button class="btn fw-3">
-                                    <i class="bi bi-x fa-lg"></i></i> <span >Menu</span>
+                                    <i class="btn bi bi-list fa-lg"></i><span>Menu</span>
                                 </button>
-                            </a>
-                            <ul class=' Menu_Header justify-content-between align-items-center me-2 menu h-100 ' id = "navbar-links">
-                                <li><a class = "index text-white p-10 text-warning" href="/#" style="color:#fac624!important ">Trang chủ</a></li>
-                                <li><a class = "introduce text-white" href="introduce.html">Giới thiệu</a></li>
-                                <li><a class = "text-white" href="/TourQuocTe.html">Tour quốc tế</a></li>
-                                <li>
-                                    <a class = "text-white" href="/TourTrongNuoc.html">Tour trong nước <i class="bi bi-chevron-down"></i> </a>
-                                
-                                    <ul class="submenu1 position-absolute p-0 top-100 ">
-                                        <li><a href="TourMienBac.html">Tour miền bắc <i class="bi bi-chevron-right position-absolute end-0"></i></a>
-                                            <ul class="submenu2 position-absolute">
-                                                <li><a href="">Hà Nội</a></li>
-                                                <li><a href="">Hải Phòng</a></li>
-                                                <li><a href="">Ninh Bình</a></li>
-                                                <li><a href="">Hà Giang</a></li>
-                                                <li><a href="">Hạ Long</a></li>
-                                                <li><a href="">Sapa</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="TourMienNam.html">Tour miền nam</a></li>
-                                        <li><a href="TourMienTrung.html">Tour miền trung<i class="bi bi-chevron-right position-absolute end-0"></i></a>
-                                            <ul class="submenu3 position-absolute">
-                                                <li><a href="">Đà Nẵng</a></li>
-                                                <li><a href="">Daily Tour</a></li>
-                                                <li><a href="">Đà Lạt</a></li>
-                                                <li><a href="">Nha Trang</a></li>
-                                                <li><a href="">Quy Nhơn</a></li>
-                                                <li><a href="">Bắc Trung Bộ</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul> 
-                                </li>
-                                <li><a class = "text-white" href="TravelHandbook.html">Cẩm nang du lịch</a></li>
-                                <li><a class = "text-white" href="introduce.html#contact-us">Liên hệ</a></li>  
-                                <!-- Tim kiem -->
-                                <li><a class = "text-white" href="#">
-                                    <button class="input-group-text btn text-white " id="Btn-Seach" onclick="ShowInput()">
-                                        <i class="bi bi-search"></i></li>
-                                    </button>
-                                </a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    
-                    <!-- Thanh tim kiem -->
-                    <div class="h-100 w-100 position-absolute" id = "input_search"style="display: none;">
-                        <div class="row d-flex h-100 w-100 m-0">
-                            <form class="input-group search__tour--items bg-white  h-100 p-0 flex-grow-1" style="width: 95%;opacity: 0.9;"action="/search.html">
-                                <input type="text" class="form-control border-0 p-4 h-100 " aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="search" style=" outline: 0; opacity:0.9; color:#fac624">
-                            </form>
-                            <button class=" border-0 text-warning text-end bg-white p-4 " id ="btn_close" onclick = "closeInput()" style="width:5%;opacity: 0.9; color:#fac624"><i class="bi bi-x-lg"></i></button>
-                        </div>
+                        </a>
+                        <a href="#" id = "toggle-button-close" onclick="CloseMenuHeader()">
+                            <button class="btn fw-3">
+                                <i class="bi bi-x fa-lg"></i></i> <span >Menu</span>
+                            </button>
+                        </a>
+                        <ul class=' Menu_Header justify-content-between align-items-center me-2 menu h-100 ' id = "navbar-links">
+                            <li><a class = "index text-white p-10 text-warning" href="/#" >Trang chủ</a></li>
+                            <li><a class = "introduce text-white" href="introduce.html">Giới thiệu</a></li>
+                            <li><a class = "text-white" href="/TourQuocTe.html" style="color:#fac624!important ">Tour quốc tế</a></li>
+                            <li>
+                                <a class = "text-white" href="/TourTrongNuoc.html">Tour trong nước <i class="bi bi-chevron-down"></i> </a>
+                            
+                                <ul class="submenu1 position-absolute p-0 top-100 ">
+                                    <li><a href="TourMienBac.html">Tour miền bắc <i class="bi bi-chevron-right position-absolute end-0"></i></a>
+                                        <ul class="submenu2 position-absolute">
+                                            <li><a href="">Hà Nội</a></li>
+                                            <li><a href="">Hải Phòng</a></li>
+                                            <li><a href="">Ninh Bình</a></li>
+                                            <li><a href="">Hà Giang</a></li>
+                                            <li><a href="">Hạ Long</a></li>
+                                            <li><a href="">Sapa</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="TourMienNam.html">Tour miền nam</a></li>
+                                    <li><a href="TourMienTrung.html">Tour miền trung<i class="bi bi-chevron-right position-absolute end-0"></i></a>
+                                        <ul class="submenu3 position-absolute">
+                                            <li><a href="">Đà Nẵng</a></li>
+                                            <li><a href="">Daily Tour</a></li>
+                                            <li><a href="">Đà Lạt</a></li>
+                                            <li><a href="">Nha Trang</a></li>
+                                            <li><a href="">Quy Nhơn</a></li>
+                                            <li><a href="">Bắc Trung Bộ</a></li>
+                                        </ul>
+                                    </li>
+                                </ul> 
+                            </li>
+                            <li><a class = "text-white" href="/TravelHandbook.html">Cẩm nang du lịch</a></li>
+                            <li><a class = "text-white" href="introduce.html#contact-us">Liên hệ</a></li>  
+                            <!-- Tim kiem -->
+                            <li><a class = "text-white" href="#">
+                                <button class="input-group-text btn text-white " id="Btn-Seach" onclick="ShowInput()">
+                                    <i class="bi bi-search"></i></li>
+                                </button>
+                            </a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Thanh tim kiem -->
+                <div class="h-100 w-100 position-absolute" id = "input_search"style="display: none;">
+                    <div class="row d-flex h-100 w-100 m-0">
+                        <form class="input-group search__tour--items bg-white  h-100 p-0 flex-grow-1" style="width: 95%;opacity: 0.9;"action="/search.html">
+                            <input type="text" class="form-control border-0 p-4 h-100 " aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" id="search" style=" outline: 0; opacity:0.9; color:#fac624">
+                        </form>
+                        <button class=" border-0 text-warning text-end bg-white p-4 " id ="btn_close" onclick = "closeInput()" style="width:5%;opacity: 0.9; color:#fac624"><i class="bi bi-x-lg"></i></button>
                     </div>
                 </div>
-            
-            <!-- Slider -->
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                <div class="carousel-inner w-100">
-                    <!-- Slider 1 -->
-                  <div class="carousel-item active" style="background-image:url(./assets/Img/Slider/slider-1.jpg);">
-                    <div class="carousel-caption d-none d-md-block container position-absolute text-start" style="left:40px!important">
-                      <h1 class="fs-2 mb-4">KHÁM PHÁ ĐÀ NẴNG - THÀNH PHỐ ĐÁNG SỐNG</h1>
-                      <p class="mb-4">Sơn Trà - Ngũ Hành Sơn - Hội An - Bà Nà Hills</p>
-                      <button class="btn text-white ps-3 pe-3 pt-2 pb-2" style="border:2px solid white">Xem chi tiết</button>
-                    </div>
-                  </div>
-                  <!-- Slider 2 -->
-                  <div class="carousel-item" style="background-image:url(./assets/Img/Slider/slider-2.jpg);">
-                    <div class="carousel-caption d-none d-md-block container position-absolute text-start" style="left:40px!important">
-                        <h1 class="fs-2 mb-4">KHÁM PHÁ XỨ HUẾ MỘNG MƠ</h1>
-                        <p class="mb-4">Kinh Thành Huế - Chùa Thiên Mụ - Sông Hương - Lăng Khải Định</p>
-                        <button class="btn text-white ps-3 pe-3 pt-2 pb-2" style="border:2px solid white">Xem chi tiết</button>
-                    </div>
-                </div>
-                <!-- Slider 3 -->
-                  <div class="carousel-item" style="background-image:url(./assets/Img/Slider/slider-3.jpg);">
-                    <div class="carousel-caption d-none d-md-block container position-absolute text-start" style="left:40px!important">
-                        <h1 class="fs-2 mb-4">KHÁM PHÁ ĐẢO NGỌC CÙ LAO </h1>
-                        <p class="mb-4">Đà Nẵng - Hội An - Bà Nà Hills - Cù Lao Chàm</p>
-                        <button class="btn text-white ps-3 pe-3 pt-2 pb-2" style="border:2px solid white">Xem chi tiết</button>
-                    </div>
-                  </div>
-                </div>
-                <!-- Button chuyen slide -->
-                <button class="carousel-control-prev justify-content-start" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next justify-content-end " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-            <!-- Search -->
-            <div class="search__tour justify-content-center d-flex">
-                <form class="input-group search__tour--items " style="width: 75%;" action="/search.html">
-                    <input type="text" class="form-control border-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Từ khóa...." id="search">
-                    <button class="input-group-text btn bg-white pt-2 pb-2 ps-4 pe-4 " id="inputGroup-sizing-lg" onclick="mySearch()">
-                        <i class="bi bi-search"></i></li>
-                    </button>
-                </form>
-                <div></div>
+                
+                    
+            <!-- Slider -->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- slide 1 -->
+                  <div class="carousel-item active" style="background-image:url(./assets/Img/TourQuocTe/danang-2.jpg)">
+                  </div>
+                  
+                  
+                </div>
+              </div>
+            
+            <!-- NOP -->
+            <div class ="NameOfPage d-flex w-100 flex-column align-items-center position-absolute" style=" margin-top: -128px;">
+                <div class="w-50 d-flex fs-6 p-3 flex-column text-white text-start" style="background-color: #000000B3; border-top-left-radius:2rem; border-top-right-radius:2rem;">
+                    <h1>Chi tiết Tour</h1>
+                    <p><a href="index.html" class="text-white">Trang chủ</a> - Tour du lịch - Tên tour</p>
+
+                </div>
             </div>
         </div>
-        <!-- Content -->
-        <div id="content">
-            
+        <div id = "content" class="container">
+
         </div>
     </main>
     <!-- Footer -->
@@ -256,10 +218,10 @@
                     </div>
                     <div class="row mb-1">
                         <div class="col-xxl col-sm-12 mb-2">
-                            <input type="text" name="" id="customerName" class="border-light border-0 rounded rounded-pill px-3 py-2 w-100 " placeholder="Tên khách hàng">
+                            <input type="text" name="" id="" class="border-light border-0 rounded rounded-pill px-3 py-2 w-100 " placeholder="Tên khách hàng">
                         </div>
                         <div class="col-xxl col-sm-12 mb-2">
-                            <input type="text" name="" id="customerMail" class="border-light border-0 rounded rounded-pill px-3 py-2 w-100 "placeholder="Email">
+                            <input type="text" name="" id="" class="border-light border-0 rounded rounded-pill px-3 py-2 w-100 "placeholder="Email">
                         </div>
                         <div class="col-xxl col-sm-12 mb-2">
                             <button class="btn border-light border-0 rounded rounded-pill px-3 py-2 bg-dark text-white  w-100" onclick="dangKy()">Đăng ký ngay</button>
@@ -317,7 +279,7 @@
                         <h2 class="text-center fs-5">CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ DU LỊCH S9 ĐÀ NẴNG – S9 TRAVEL ĐÀ NẴNG</h2>
                         <!-- Contact address -->
                         <div class="row">
-                            <ul class ="col-xxl-6 col-sm-12  d-flex flex-column">
+                            <ul class ="col-xxl-6 col-sm-12 d-flex flex-column">
                                 <li>
                                     <a href="mailto:s9traveldn@gmail.com">
                                         <i class="bi bi-person"></i>
@@ -362,7 +324,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <div class="col-xxl-6 col-sm-12 ">
+                            <div class="col-xxl-6 col-sm-12">
                                 <div class="fb-page " data-href="https://www.facebook.com/s9traveldanang" data-tabs="timeline" data-width="450" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/s9traveldanang" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/s9traveldanang">S9 Travel Đà Nẵng</a></blockquote></div>
                             </div>
                         </div> 
@@ -418,14 +380,15 @@
         </div>
     
     </footer>
- 
+</body>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <!-- <script src="/assets/js/index.js"></script> -->
-    <script src="assets/js/tour.js"></script>
-    <script src="assets/js/search.js"></script>
-    <script src="assets/js/Fixed__Header.js"></script>
-    <script>
-        window.onload = function(){getFullTours()}
-    </script>
+    <!-- <script src="/assets/js/tourQuocTe.js"></script> -->
+    <script src="/assets/js/Fixed__Header.js"></script>
+    <script src="/assets/js/search.js"></script>
+    <script src="/assets/js/tour.js"></script>
     <script src="assets/js/Header.js"></script>
-</body>
+    <script>
+        window.onload = function () {getToursQT()}
+    </script>
+</html>

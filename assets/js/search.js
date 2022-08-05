@@ -14,26 +14,28 @@ function ShowInputhf(){
 }
 function closeInputhf(){
     document.getElementById("input_search-hf").setAttribute('style','display: none !important')
-
 }
+
+
 function mySearch() {
-    let seach_input = document.getElementById('search')
-    let text = seach_input.value
+    let seach_input = document.getElementById('search');
+    let text = seach_input.value;
     if (text != '') {
-        localStorage.setItem('searchText', JSON.stringify(text))
+        localStorage.setItem('searchText', JSON.stringify(text));
     }
 }
 
 mySearch()
 let tours = JSON.parse(localStorage.getItem('tours'))
-// console.log(search_tour)
 
 let text = JSON.parse(localStorage.getItem('searchText'))
 
 function searchTour(text) {
-    let search_tour = []
+    let search_tour = [];
+    
     for (let i = 0; i < tours.length; i++) {
         for (let j = 0; j < tours[i]['tours'].length; j++) {
+            
             if (tours[i]['tours'][j]['name'].includes(text)) {
                 search_tour.push(tours[i]['tours'][j])
             }
@@ -42,35 +44,25 @@ function searchTour(text) {
     return search_tour
 }
 
-// console.log(text)
-// searchTour(text)
-// console.log(search_tour)
-
-// let content = document.getElementById('search')
-// let row = document.createElement('div')
-// row.className = 'row'
 
 var row = document.getElementById('show_result')
 
 
-// let div = document.createElement('div')s
-
 function showTour() {
     let search_tour = searchTour(text)
     if(search_tour.length != 0){
-
         for (let i = 0; i < search_tour.length; i++) {
-            let col_3 = document.createElement('div')
-            col_3.className = 'col-3'
-            col_3.innerHTML =   `<div class="d-flex justify-content-between" >
+            let col = document.createElement('div')
+            col.className = 'col-3'
+            col.innerHTML =   `<div class="d-flex justify-content-between" >
             <!-- card -->
             <div class="card my-3" style="width: 18rem; background-color: #F3F3F3;">
             <!-- Title of card -->
             <div class="title ">
-            <a  class = "d-flex justify-content-center" href="/#">
-                    <h2 class=" fs-5 align-item-center mb-0 p-2" style="color: #d36e24; text-overflow: ellipsis;overflow: hidden; white-space: nowrap;">${search_tour[i]['title']}</h2>
+                <a  class = "d-flex justify-content-center" href="/#">
+                        <h2 class=" fs-5 align-item-center mb-0 p-2" style="color: #d36e24; text-overflow: ellipsis;overflow: hidden; white-space:  nowrap;">${search_tour[i]['title']}</h2>
                 </a>
-                </div>
+            </div>
             <!-- img of card -->
             <a  href="/#">
                 <img src="${search_tour[i]['img']}" class="card-img-top" alt="...">
@@ -123,19 +115,7 @@ function showTour() {
                         </div>
         </div>
     </div>`
-        // row.appendChild(col_3)
-        // console.log(row.innerHTML)
-        // console.log("add successfully")
-        row.appendChild(col_3)
+        row.appendChild(col)
     }
-    // content.appendChild(row)
-}
-else{  
-    row.innerHTML = `
-    Danh mục trống!!
-    `
-    
-
 }}
-
 showTour()

@@ -164,7 +164,6 @@ function deleteTour(row) {
 function getCustomerRequest(){
   let tableBody = document.getElementById('tableBodyRequest')
   console.log(request)
-  console.log('hello')
   for(let i = 0; i<request.length; i++){
     tr = document.createElement('tr')
     tr.innerHTML = `
