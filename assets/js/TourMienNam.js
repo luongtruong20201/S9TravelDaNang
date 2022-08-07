@@ -7,7 +7,6 @@ tours = [
         ]
     },
 ]
-
 let tour = document.getElementById('TourMienNam')
 for (let i = 0; i < tours.length; i++) {
     let container = document.createElement('div')
@@ -47,13 +46,13 @@ for (let i = 0; i < tours.length; i++) {
                         <span class="elementor-icon-list-text"><strong>${tours[i]['tours'][j]['price']}</strong></span>
                     </li>
                     
-                    <li class="elementor-icon-list-item pb-1 mt-1 " >
+                    <li class="elementor-icon-list-item pb-1 mt-1 ">
                         <span>
                             <i class="bi bi-clock text-danger"></i>
                         </span>
                         <span class="elementor-icon-list-text">Thời gian: ${tours[i]['tours'][j]['time']}</span>
                     </li>
-                    
+
                     <li class="elementor-icon-list-item mt-1">
                         <span>
                             <i class="fa-solid fa-car text-danger"></i>
@@ -120,7 +119,7 @@ for (let i = 0; i < tours.length; i++) {
                         </div>
                         </div>
                         <div class="col-12 pb-2 px-2">
-                          <button class=" w-100 btn btn-warning" type="submit">Đặt tour ngay </button>
+                          <button class=" w-100 btn btn-warning" type="submit">Đặt tour ngay</button>
                         </div>
                     </form>
                   </div>

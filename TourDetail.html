@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!-- css -->
-    <link rel="stylesheet" href="assets/css/TourTrongNuoc.css">
+    <link rel="stylesheet" href="assets/css/TourQuocTe.css">
+    <link rel="stylesheet" href="assets/css/TourDetail.css">
     <!-- icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <!-- favicon -->
@@ -54,9 +55,9 @@
                         <ul class='Menu_Header justify-content-between align-items-center me-2 menu h-100 ' id = "navbar-linkshf">
                             <li><a class = "index text-black p-10 text-warning" href="/#" >Trang chủ</a></li>
                             <li><a class = "introduce text-black" href="introduce.html ">Giới thiệu</a></li>
-                            <li><a class = "text-black" href="/TourQuocTe.html">Tour quốc tế</a></li>
+                            <li><a class = "text-black" href="/TourQuocTe.html"style="color:#fac624!important ">Tour quốc tế</a></li>
                             <li>
-                                <a class = "text-black px-2" href="/TourTrongNuoc.html" style="color:#fac624!important ">Tour trong nước <i class="bi bi-chevron-down"></i> </a>
+                                <a class = "text-black px-2" href="/TourTrongNuoc.html">Tour trong nước <i class="bi bi-chevron-down"></i> </a>
                             
                                 <ul class="submenu1 position-absolute p-0 top-100 ">
                                     <li><a href="TourMienBac.html" >Tour miền bắc <i class="bi bi-chevron-right position-absolute end-0"></i></a>
@@ -107,10 +108,9 @@
         </div>
     </header>
     
-    
     <main class="position-relative ">
         <div class="slider container-fluid ps-0 pe-0 ">
-            <!-- Header Main  -->
+            <!-- Header Main -->
             <div class="Header__Main d-flex justify-content-between w-100 align-items-center position-absolute">
                 <div class="h-100 ms-2 align-items-center d-flex">
                     <a href="index.html">
@@ -133,9 +133,9 @@
                         <ul class=' Menu_Header justify-content-between align-items-center me-2 menu h-100 ' id = "navbar-links">
                             <li><a class = "index text-white p-10 text-warning" href="/#" >Trang chủ</a></li>
                             <li><a class = "introduce text-white" href="introduce.html">Giới thiệu</a></li>
-                            <li><a class = "text-white" href="/TourQuocTe.html">Tour quốc tế</a></li>
+                            <li><a class = "text-white" href="/TourQuocTe.html" style="color:#fac624!important ">Tour quốc tế</a></li>
                             <li>
-                                <a class = "text-white" href="/TourTrongNuoc.html" style="color:#fac624!important ">Tour trong nước <i class="bi bi-chevron-down"></i> </a>
+                                <a class = "text-white" href="/TourTrongNuoc.html">Tour trong nước <i class="bi bi-chevron-down"></i> </a>
                             
                                 <ul class="submenu1 position-absolute p-0 top-100 ">
                                     <li><a href="TourMienBac.html">Tour miền bắc <i class="bi bi-chevron-right position-absolute end-0"></i></a>
@@ -190,22 +190,25 @@
                     <!-- slide 1 -->
                   <div class="carousel-item active" style="background-image:url(./assets/Img/TourQuocTe/danang-2.jpg)">
                   </div>
+                  
+                  
                 </div>
               </div>
             
-            <!-- NOB -->
+            <!-- NOP -->
             <div class ="NameOfPage d-flex w-100 flex-column align-items-center position-absolute" style=" margin-top: -128px;">
-                <div class="w-50 d-flex fs-6 p-3 flex-column text-white text-start" style="background-color: #000000B3; border-top-left-radius:2rem; border-top-right-radius:2rem;">
-                    <h1>Tour Trong Nước</h1>
-                    <p><a href="index.html" class="text-white">Trang chủ</a> - Danh Mục Tour - Tour Trong Nước</p>
+                <div class="w-50 d-flex fs-6 p-3 flex-column text-white text-start" style="background-color: #000000B3; border-top-left-radius:2rem; border-top-right-radius:2rem;" id = "NameOfPage">
+                    
 
                 </div>
             </div>
         </div>
-        <div id = "content">
-
+        <div id = "TourDetail" class="container-fluid row my-3 align-items-center">
+            
         </div>
+        
     </main>
+    <!-- Footer -->
     <footer  style = "background-color:#E9E9E9;">
         <div class="position-relative h-100">
             <!-- Form Dang Ky -->
@@ -380,13 +383,9 @@
     </footer>
 </body>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <!-- <script src="/assets/js/index.js"></script> -->
-    <!-- <script src="/assets/js/TourTrongNuoc.js"></script> -->
+    <script src="/assets/js/Fixed__Header.js"></script>
     <script src="/assets/js/search.js"></script>
-    <script src = "assets/js/Fixed__Header.js"></script>
     <script src="/assets/js/tour.js"></script>
     <script src="assets/js/Header.js"></script>
-    <script>
-        window.onload = function(){getToursTN()}
-    </script>
+    <script src = "assets/js/TourDetail.js"></script>
 </html>

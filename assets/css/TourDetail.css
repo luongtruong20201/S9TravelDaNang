@@ -1,0 +1,35 @@
+.TourDetailMenu ul{
+    padding: 0;
+}
+.TourDetailMenu ul li i,
+.TourDetailMenu ul li svg
+{
+    color: #ce0909;
+    font-size: 17px;
+}
+.TourDetailMenu ul .TourDetailMeunu-list{
+    display: flex;
+    flex-direction: column;
+}
+.TourDetailMenu ul .TourDetailMeunu-list::after{
+    content: "";
+    border-bottom: 2px dashed #E9E4E4;
+    width: 100%;
+    height: 2px;
+}
+.TourDetailMenu ul:first-child{
+    margin: 0;
+    padding-bottom: 5px;
+}
+.TourDetailMenu ul .TourDetailMeunu-list{
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+.TourDetail__table table tbody td a{
+    color: #54595f;
+    font-size: 17px;
+}
+.TourDetail__table table tbody td a i{
+    color: #fac624
+    
+}

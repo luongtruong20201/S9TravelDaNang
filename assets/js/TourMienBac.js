@@ -5,9 +5,7 @@ tours = [
             { title: "Đà Nẵng - Hà Nội - Ninh Bình", name: "Đà Nẵng - Hà Nội - Ninh Bình", price: "Liên hệ để biết thêm", time: "3 Ngày 2 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/6.jpg" },
             { title: "Hà Nội - Hạ Long - Ninh Bình", name: "Đà Nẵng - Hà Nội - Hạ Long - Ninh Bình - Đà Nẵng", price: "Liên hệ để biết thêm", time: "5 Ngày 4 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/7.jpg" },
             { title: "Hà Nội - Ninh Bình - Sapa - Hạ Long", name: "Đà Nẵng - Hà Nội - Hạ Long - Ninh Bình - Đà Nẵng", price: "Liên hệ để biết thêm", time: "5 Ngày 4 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/8.jpg" },
-            // { title: "Hà Nội - Ninh Bình - Sapa - Hạ Long", name: "Đà Nẵng - Hà Nội - Tràng An - Sapa - Hạ Long - Đà Nẵng", price: "Liên hệ để biết thêm", time: "6 Ngày 5 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/1.jpg" },
-
-
+            //{ title: "Hà Nội - Ninh Bình - Sapa - Hạ Long", name: "Đà Nẵng - Hà Nội - Tràng An - Sapa - Hạ Long - Đà Nẵng", price: "Liên hệ để biết thêm", time: "6 Ngày 5 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/1.jpg" },
         ]
     },
 ]
@@ -94,8 +92,7 @@ for (let i = 0; i < tours.length; i++) {
                     </div>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body">
-                    
+                    <div class="modal-body">
                       <form class="row g-3">
                         <div class="input-group">
                             <input class="form-control bg-white" id="disabledInput" type="text" value="Tên tour: " disabled>
