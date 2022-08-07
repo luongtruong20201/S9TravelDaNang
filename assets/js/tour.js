@@ -16,14 +16,14 @@ let listOfTours = [
     {
         heading: "TOUR DU LỊCH TRONG NƯỚC",
         tours: [
-            { id: 1,name: "Đà Nẵng - Nha Trang - Đà Lạt - Quy Nhơn", destination: "Đà Nẵng - Nha Trang - Đà Lạt - Quy Nhơn", price: "Liên hệ để biết thêm", time: "5 Ngày 4 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_TrongNuoc/1.jpg" },
-            { id: 2,name: "Đà Nẵng - VQG Bạch Mã", destination: "Đà Nẵng - Vườn quốc gia Bạch Mã", price: "Liên hệ để biết thêm", time: "1 Ngày", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_TrongNuoc/2.jpg" },
-            { id: 3, name: "Đà Nẵng - Mỹ Sơn - Hội An", destination: "Đà Nẵng - Mỹ Sơn - Hội An", price: "750.000 VNĐ", time: "1 Ngày", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_TrongNuoc/3.jpg" },
-            { id: 4, name: "Thiên  đường nghỉ dưỡng Phú Quốc", destination: "Phú Quốc", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/4.jpg" },
-            { id: 5, name: "Khám phá Miền Tây", destination: "Miền Tây", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/5.jpg" },
-            { id: 6, name: "Đà Nẵng - Hà Nội - Ninh Bình", destination: "Đà Nẵng - Hà Nội - Ninh Bình", price: "Liên hệ để biết thêm", time: "3 Ngày 2 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/6.jpg" },
-            { id: 7, name: "Hà Nội - Hạ Long - Ninh Bình", destination: "Đà Nẵng - Hà Nội - Hạ Long - Ninh Bình - Đà Nẵng", price: "Liên hệ để biết thêm", time: "5 Ngày 4 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/7.jpg" },
-            { id: 8, name: "Hà Nội - Ninh Bình - Sapa - Hạ Long", destination: "Đà Nẵng - Hà Nội - Hạ Long - Ninh Bình - Đà Nẵng", price: "Liên hệ để biết thêm", time: "5 Ngày 4 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/8.jpg" },
+            { id: 9,name: "Đà Nẵng - Nha Trang - Đà Lạt - Quy Nhơn", destination: "Đà Nẵng - Nha Trang - Đà Lạt - Quy Nhơn", price: "Liên hệ để biết thêm", time: "5 Ngày 4 Đêm", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_TrongNuoc/1.jpg" },
+            { id: 10,name: "Đà Nẵng - VQG Bạch Mã", destination: "Đà Nẵng - Vườn quốc gia Bạch Mã", price: "Liên hệ để biết thêm", time: "1 Ngày", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_TrongNuoc/2.jpg" },
+            { id: 11, name: "Đà Nẵng - Mỹ Sơn - Hội An", destination: "Đà Nẵng - Mỹ Sơn - Hội An", price: "750.000 VNĐ", time: "1 Ngày", vehicle: "Ô tô", img: "assets/Img/Tours/Tour_TrongNuoc/3.jpg" },
+            { id: 12, name: "Thiên  đường nghỉ dưỡng Phú Quốc", destination: "Phú Quốc", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/4.jpg" },
+            { id: 13, name: "Khám phá Miền Tây", destination: "Miền Tây", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/5.jpg" },
+            { id: 14, name: "Đà Nẵng - Hà Nội - Ninh Bình", destination: "Đà Nẵng - Hà Nội - Ninh Bình", price: "Liên hệ để biết thêm", time: "3 Ngày 2 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/6.jpg" },
+            { id: 15, name: "Hà Nội - Hạ Long - Ninh Bình", destination: "Đà Nẵng - Hà Nội - Hạ Long - Ninh Bình - Đà Nẵng", price: "Liên hệ để biết thêm", time: "5 Ngày 4 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/7.jpg" },
+            { id: 16, name: "Hà Nội - Ninh Bình - Sapa - Hạ Long", destination: "Đà Nẵng - Hà Nội - Hạ Long - Ninh Bình - Đà Nẵng", price: "Liên hệ để biết thêm", time: "5 Ngày 4 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/8.jpg" },
             // { name: "Hà Nội - Ninh Bình - Sapa - Hạ Long", name: "Đà Nẵng - Hà Nội - Tràng An - Sapa - Hạ Long - Đà Nẵng", price: "Liên hệ để biết thêm", time: "6 Ngày 5 Đêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_TrongNuoc/1.jpg" },
 
 
@@ -32,17 +32,15 @@ let listOfTours = [
     {
         heading: "TOUR DU LỊCH QUỐC TẾ",
         tours: [
-            { id: 1, name: "Tour Trung Quốc", destination: "Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/1.jpg" },
-            { id: 2, name: "Tour Nhật Bản", destination: "Osaka - Nara - Kyoto - Núi Fuji - Tokio", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/2.jpg" },
-            { id: 3, name: "Tour Hàn Quốc", destination: "Seoul - Nami - Everland", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/3.jpg" },
+            { id: 17, name: "Tour Trung Quốc", destination: "Bắc Kinh - Thượng Hải - Hàng Châu - Tô Châu", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/1.jpg" },
+            { id: 18, name: "Tour Nhật Bản", destination: "Osaka - Nara - Kyoto - Núi Fuji - Tokio", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/2.jpg" },
+            { id: 19, name: "Tour Hàn Quốc", destination: "Seoul - Nami - Everland", price: "Liên hệ để biết thêm", time: "Liên hệ để biết thêm", vehicle: "Ô tô - Máy Bay", img: "assets/Img/Tours/Tour_QuocTe/3.jpg" },
         ]
     }
 ]
-
-listOfTours = JSON.parse(localStorage.getItem('tours'))
-
 let txt = JSON.stringify(listOfTours,null, 4)
 localStorage.setItem('tours', txt)
+listOfTours = JSON.parse(localStorage.getItem('tours'))
 
 let customer = JSON.parse(localStorage.getItem('customer'))
 let request = JSON.parse(localStorage.getItem('request'))
@@ -61,6 +59,8 @@ function getFullTours() {
         let row = document.createElement('div')
         row.className = 'row'
         for (let j = 0; j < listOfTours[i]['tours'].length; j++) {
+            let obj = JSON.stringify(listOfTours[i]['tours'][j])
+            
             let col_3 = document.createElement('div')
             col_3.className = 'col-sm-12 col-xxl-3 col-lg-4 col-md-6'
             col_3.innerHTML =
@@ -116,8 +116,10 @@ function getFullTours() {
                         Đặt tour
                     </button>
                 </div>
-                <div class="flex-fill">
-                    <a href="" class="container ps-1 text-white" id = "ChiTietTour">
+                <div class="flex-fill " >
+                    <a href="TourDetail.html" class="container ps-1 text-white" target = "_blank" onclick = "getData(${obj}){
+                        ${ 
+                            localStorage.setItem('Data',`${obj}`)};}" >
                         <i class="bi bi-search-heart me-2 pe-2"></i>
                         <span>Chi tiết</span>
                     </a>
@@ -178,8 +180,6 @@ function getFullTours() {
         tour.appendChild(container)
     }
 }
-
-
 //Tours Quoc Te
 function getToursQT() {
     let tour = document.getElementById('content')
@@ -245,7 +245,7 @@ function getToursQT() {
                     </button>
                 </div>
                 <div class="flex-fill">
-                    <a href="" class="container ps-1 text-white" id = "ChiTietTour">
+                    <a href="TourDetail.html" class="container ps-1 text-white" id = "ChiTietTour">
                         <i class="bi bi-search-heart me-2 pe-2"></i>
                         <span>Chi tiết</span>
                     </a>
@@ -348,7 +348,6 @@ function getToursTN() {
                         </span>
                         <span class="elementor-icon-list-text"><strong>${listOfTours[i]['tours'][j]['price']}</strong></span>
                     </li>
-                    
                     <li class="elementor-icon-list-item pb-1 mt-1 " >
                         <span>
                             <i class="bi bi-clock text-danger"></i>
@@ -373,7 +372,7 @@ function getToursTN() {
                     </button>
                 </div>
                 <div class="flex-fill">
-                    <a href="" class="container ps-1 text-white" id = "ChiTietTour">
+                    <a href="TourDetail.html" class="container ps-1 text-white" id = "ChiTietTour" >
                         <i class="bi bi-search-heart me-2 pe-2"></i>
                         <span>Chi tiết</span>
                     </a>
@@ -435,8 +434,9 @@ function getToursTN() {
     }
 }
 
-// localStorage.setItem('tours', JSON.stringify("", undefined, 4))
 
+
+// localStorage.setItem('tours', JSON.stringify("", undefined, 4))
 function dangKy(){
     let customerName = document.getElementById('customerName').value
     let customerMail = document.getElementById('customerMail').value
@@ -456,3 +456,4 @@ function saveRequest(){
     alert("Bạn đã đăng ký thành công")
     localStorage.setItem('request', JSON.stringify(request, undefined, 4))
 }
+

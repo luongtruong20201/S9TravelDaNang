@@ -18,34 +18,30 @@ function closeInputhf(){
 
 
 function mySearch() {
-    let seach_input = document.getElementById('search');
-    let text = seach_input.value;
-    if (text != '') {
-        localStorage.setItem('searchText', JSON.stringify(text));
+    let text_input = document.getElementById('search').value;
+    if (text_input != '') {
+        localStorage.setItem('searchText', JSON.stringify(text_input));
     }
+
 }
 
-mySearch()
 let tours = JSON.parse(localStorage.getItem('tours'))
-
-let text = JSON.parse(localStorage.getItem('searchText'))
-
+let text =  JSON.parse(localStorage.getItem('searchText'))
 function searchTour(text) {
     let search_tour = [];
-    
     for (let i = 0; i < tours.length; i++) {
         for (let j = 0; j < tours[i]['tours'].length; j++) {
-            
-            if (tours[i]['tours'][j]['name'].includes(text)) {
-                search_tour.push(tours[i]['tours'][j])
+            if(tours[i]['tours'][j]['name'] != ''){
+                let uppercase = tours[i]['tours'][j]['name'].toUpperCase()
+                if (uppercase.includes(text.toUpperCase())) {
+                    search_tour.push(tours[i]['tours'][j])
+                }
             }
         }
+    
     }
-    return search_tour
+    return search_tour;
 }
-
-
-var row = document.getElementById('show_result')
 
 
 function showTour() {
@@ -53,14 +49,14 @@ function showTour() {
     if(search_tour.length != 0){
         for (let i = 0; i < search_tour.length; i++) {
             let col = document.createElement('div')
-            col.className = 'col-3'
+            col.className = 'col-sm-12 col-xxl-3 col-lg-4 col-md-6'
             col.innerHTML =   `<div class="d-flex justify-content-between" >
             <!-- card -->
             <div class="card my-3" style="width: 18rem; background-color: #F3F3F3;">
             <!-- Title of card -->
             <div class="title ">
                 <a  class = "d-flex justify-content-center" href="/#">
-                        <h2 class=" fs-5 align-item-center mb-0 p-2" style="color: #d36e24; text-overflow: ellipsis;overflow: hidden; white-space:  nowrap;">${search_tour[i]['title']}</h2>
+                        <h2 class=" fs-5 align-item-center mb-0 p-2" style="color: #d36e24; text-overflow: ellipsis;overflow: hidden; white-space:  nowrap;">${search_tour[i]['name']}</h2>
                 </a>
             </div>
             <!-- img of card -->
@@ -116,6 +112,20 @@ function showTour() {
         </div>
     </div>`
         row.appendChild(col)
+        window.localStorage.removeItem('searchText')
     }
-}}
+    
+}else{
+    let arlert = `<h1> Không có kết quả tìm kiếm ${text} </h1>`
+    row.innerHTML = arlert
+    window.onload(() => {
+        arlert = ""
+        row.innerHTML = arlert
+    })
+}
+}
 showTour()
+window.onload(() => {
+    window.localStorage.removeItem('searchText')
+    
+})

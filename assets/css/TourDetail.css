@@ -25,3 +25,11 @@
     padding-bottom: 5px;
     margin-top: 5px;
 }
+.TourDetail__table table tbody td a{
+    color: #54595f;
+    font-size: 17px;
+}
+.TourDetail__table table tbody td a i{
+    color: #fac624
+    
+}

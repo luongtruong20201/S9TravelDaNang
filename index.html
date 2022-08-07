@@ -232,7 +232,7 @@
             <!-- Search -->
             <div class="search__tour justify-content-center d-flex">
                 <form class="input-group search__tour--items " style="width: 75%;" action="/search.html">
-                    <input type="text" class="form-control border-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Từ khóa...." id="search">
+                    <input type="text" class="form-control border-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Từ khóa...." id="search" onchange="mySearch()" >
                     <button class="input-group-text btn bg-white pt-2 pb-2 ps-4 pe-4 " id="inputGroup-sizing-lg" onclick="mySearch()">
                         <i class="bi bi-search"></i></li>
                     </button>
@@ -426,6 +426,7 @@
     <script src="assets/js/Fixed__Header.js"></script>
     <script>
         window.onload = function(){getFullTours()}
+        
     </script>
     <script src="assets/js/Header.js"></script>
 </body>
