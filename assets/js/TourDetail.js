@@ -6,8 +6,8 @@ console.log(Tours)
 function TourDetail(Tours){
     let Tour_Detail = document.getElementById('TourDetail') 
     document.getElementById('NameOfPage').innerHTML = `
-        <h1>TOUR DU LỊCH QUỐC TẾ</h1>
-        <p><a href="index.html" class="text-white">Trang chủ</a> - Tour du lịch - TOUR DU LỊCH QUỐC TẾ</p>`
+        <h1>${Tours['name']}</h1>
+        <p><a href="index.html" class="text-white">Trang chủ</a> - Tour du lịch - ${Tours['name']}</p>`
     Tour_Detail.innerHTML = `
             <div class="col-sm-12 col-xxl-4 col-lg-4 col-md-6 TourDetail__Img">
                 <img src="${Tours['img']}" alt="" class="img-thumbnail">

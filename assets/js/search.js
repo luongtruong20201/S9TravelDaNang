@@ -114,7 +114,7 @@ function showTour() {
                 <!-- contact -->
                 <div class="d-flex bg-warning">
                     <div class="flex-fill ">
-                        <button class ="container ps-1 text-white bg-warning border-0" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal${search_tour[i]}">
+                        <button class ="container ps-1 text-white bg-warning border-0" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal${search_tour[i]['id']}">
                             <i class="bi bi-telephone-fill me-2 pe-2"></i>
                             Đặt tour
                         </button>
@@ -132,7 +132,7 @@ function showTour() {
         </div>
     
         <!-- Modal -->
-            <div class="modal fade " id="exampleModal${search_tour[i]}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal${search_tour[i]['id']}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-header ">
