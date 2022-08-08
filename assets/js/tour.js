@@ -74,9 +74,9 @@ function getFullTours() {
                 </a>
             </div>
             <!-- img of card -->
-            <a  href="/#">
+            <a  href="TourDetail.html">
                 <img src="${listOfTours[i]['tours'][j]['img']}" class="card-img-top" alt="Tour">
-            </a href="/#">
+            </a>
             <!-- places -->
             <div class="d-flex justify-content-between collapse py-2 Card__Text">
                 <hr class="flex-fill" style="width:9%" >
